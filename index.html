@@ -161,8 +161,25 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 @keyframes journalPhotoFloat{0%,100%{transform:scale(1.02) translateY(0)}50%{transform:scale(1.02) translateY(-4px)}}
 @media(max-width:980px){.heroTagline{top:55.9%;font-size:24px}.journalScene{height:auto}}
 @media(max-width:640px){.hero{min-height:0;height:auto;aspect-ratio:3/2;background-size:cover;background-position:center}.heroTagline{left:4.17%;right:4%;top:55.9%;font-size:clamp(11px,3.2vw,18px);line-height:1.3;letter-spacing:.02em}.journalScene{height:auto;aspect-ratio:3/2}.travelIntro{margin-bottom:90px}.flight{gap:16px 12px}.flight span{font-size:9px}.ticketValue{font-size:14px}.ticketBadge{right:14px;top:8px;font-size:8px;padding:4px 7px}}
-@media(prefers-reduced-motion:reduce){.journalPhotography,.ticketValue > span{font:inherit;color:inherit;letter-spacing:inherit}
-.ticketValue.isTyping:after{animation:none!important}}
+@media(prefers-reduced-motion:reduce){.journalPhotography,.ticketValue.isTyping:after{animation:none!important}}
+</style>
+<style id="airline-boarding-pass">
+/* Airline-paper boarding pass, based on the supplied reference. */
+.ticket{display:grid;grid-template-columns:minmax(0,1fr) 270px;grid-template-rows:48px auto;min-height:300px;border:1px solid #d3dce1;border-radius:18px;background:#f1f2ef;box-shadow:0 20px 46px rgba(21,55,83,.18);overflow:hidden}
+.ticketStub{grid-column:1;grid-row:1;writing-mode:horizontal-tb;transform:none;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 28px;background:#1579ba;color:#fff;font:800 12px "DM Sans",sans-serif;letter-spacing:.09em}
+.ticketHeaderBrand{display:flex;align-items:center;gap:14px;white-space:nowrap}.ticketHeaderBrand>span{font-size:28px;line-height:1}.ticketHeaderCaption{font-size:10px;opacity:.9;letter-spacing:.12em}
+.ticketMain{grid-column:1;grid-row:2;position:relative;isolation:isolate;display:grid;grid-template-columns:.8fr 1.25fr;gap:28px;align-items:center;padding:30px 34px 36px 38px;min-height:250px;border-left:12px solid #1579ba;background:#f1f2ef}
+.ticketMain:before{content:"";position:absolute;inset:8px 8% 4px 5%;z-index:-1;background:url("assets/images/boarding-world.svg") center/contain no-repeat;opacity:.47;pointer-events:none}
+.ticketTitle strong{font:900 clamp(28px,3vw,42px)/1.1 "DM Sans",sans-serif;letter-spacing:-.035em;color:#18364a;white-space:nowrap}
+.ticketTitle em{font:italic 24px/1.4 "Noto Serif TC",Georgia,serif;color:#334e5d;margin-top:5px}
+.flight{grid-template-columns:1fr 1fr;gap:24px 22px;align-items:start}.flight>div>span{display:block;font:700 9px/1.5 "DM Sans",sans-serif;letter-spacing:.09em;color:#63727a}.flight .ticketValue{margin-top:6px;font-size:16px;font-weight:800;color:#233a48;min-height:1.5em}.flight .boardingStatus{color:#e15d32;letter-spacing:.035em}
+.ticketSide{grid-column:2;grid-row:1 / 3;display:flex;flex-direction:column;justify-content:flex-start;position:relative;border-left:2px dashed #bdc9cd;background:#f8f8f4;min-width:0}
+.ticketSide:before,.ticketSide:after{content:"";position:absolute;left:-11px;width:20px;height:20px;border-radius:50%;background:#f8fbfd;z-index:2}.ticketSide:before{top:-11px}.ticketSide:after{bottom:-11px}
+.ticketSideHeader{width:100%;height:48px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 23px;background:#1168a5;color:white;font:800 10px "DM Sans",sans-serif;letter-spacing:.1em}.ticketSideHeader>span{font-size:22px}
+.ticketSideBody{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:22px 20px;gap:12px;width:100%}.ticketSideTitle{font:900 25px/1.1 "DM Sans",sans-serif;color:#19384b;align-self:flex-start}.ticketSideTitle small{display:block;font:italic 14px Georgia,serif;margin-top:4px;color:#65777f}.ticketSideLabel{font:700 8px "DM Sans",sans-serif;letter-spacing:.13em;color:#6e7e84;align-self:flex-start}.ticketWish{font:900 12px "DM Sans",sans-serif;letter-spacing:.06em;color:#1579ba;transform:rotate(-4deg);margin-top:3px}.barcode{width:150px;height:58px;flex-shrink:0;background:repeating-linear-gradient(0deg,#263b44 0 2px,transparent 2px 5px,#263b44 5px 8px,transparent 8px 11px)}
+@media(max-width:1100px){.ticket{grid-template-columns:minmax(0,1fr) 225px}.ticketMain{grid-template-columns:1fr;gap:24px;padding:26px 28px}.ticketTitle strong{font-size:34px}.ticketTitle em{font-size:20px}.ticketHeaderCaption{font-size:8px}}
+@media(max-width:640px){.ticket{grid-template-columns:minmax(0,1fr);grid-template-rows:44px auto auto;border-radius:15px;margin-top:-22px}.ticketStub{display:flex;padding:0 18px;font-size:10px}.ticketHeaderBrand{gap:9px}.ticketHeaderBrand>span{font-size:24px}.ticketHeaderCaption{display:none}.ticketMain{padding:25px 20px 28px;border-left-width:7px;min-height:260px;gap:25px}.ticketTitle strong{font-size:32px}.ticketTitle em{font-size:20px}.flight{gap:20px 14px}.flight .ticketValue{font-size:14px}.flight>div>span{font-size:8px;letter-spacing:.02em}.ticketSide{grid-column:1;grid-row:3;display:block;border-left:0;border-top:2px dashed #bdc9cd}.ticketSide:before,.ticketSide:after{top:-11px;bottom:auto}.ticketSide:before{left:-11px}.ticketSide:after{right:-11px;left:auto}.ticketSideHeader{display:none}.ticketSideBody{display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:10px 14px;padding:20px}.ticketSideTitle{font-size:22px;grid-column:1;grid-row:1}.ticketSideTitle small{font-size:12px}.ticketSideLabel{display:none}.ticketSideBody .barcode{grid-column:2;grid-row:1 / 3}.ticketWish{font-size:10px;margin:0;grid-column:1;grid-row:2;transform:none}.ticketMain:before{inset:5% 0;opacity:.35}}
+@media(max-width:360px){.ticketSideBody{grid-template-columns:minmax(0,1fr) 130px;padding:17px 14px;gap:10px}.ticketSideBody .barcode{width:130px}.ticketSideTitle{font-size:20px}}
 </style>
 </head>
 <body>
@@ -174,11 +191,11 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 <section class="section" id="journey" style="padding-top:0">
 <div class="shell">
 <div class="ticket">
-<div class="ticketStub">BOARDING PASS</div>
+<div class="ticketStub"><span class="ticketHeaderBrand"><span aria-hidden="true">✈</span> BOARDING PASS</span><span class="ticketHeaderCaption">BMW 2026 · ANNUAL JOURNEY</span></div>
 <div class="ticketMain">
 <div class="ticketTitle"><strong>BMW 2026</strong><em>Annual Journey</em></div>
 <div class="flight" aria-label="年度旅程登機資訊"><div><span>PASSENGERS 旅客</span><b class="ticketValue">客服團隊全體夥伴</b></div><div><span>DATE 旅程期間</span><b class="ticketValue">JAN — DEC 2026</b></div><div><span>DESTINATION 目的地</span><b class="ticketValue">下一站 · 更好的我們</b></div><div><span>BOARDING 登機狀態</span><b class="ticketValue boardingStatus">READY TO GO</b></div></div>
-</div><div class="ticketSide"><div class="barcode"></div></div><div class="ticketBadge">CUSTOMER SERVICE · ANNUAL JOURNEY</div>
+</div><div class="ticketSide"><div class="ticketSideHeader">BOARDING PASS <span aria-hidden="true">✈</span></div><div class="ticketSideBody"><div class="ticketSideTitle">BMW 2026<small>Annual Journey</small></div><div class="ticketSideLabel">CUSTOMER SERVICE TEAM</div><div class="barcode" aria-hidden="true"></div><div class="ticketWish">HAVE A NICE TRIP!</div></div></div>
 </div>
 </div>
 </section>
