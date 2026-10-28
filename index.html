@@ -195,6 +195,15 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 @media(max-width:640px){.ticket{grid-template-columns:minmax(0,1fr)}.ticketMain{padding:26px 18px;min-height:310px}.ticketTitle strong{font-size:36px}.ticketTitle em{font-size:25px}.flight>div>span{font-size:11px}.flight .ticketValue{font-size:17px}.flight{gap:23px 12px}.ticketSideBody{grid-template-columns:1fr;gap:14px;padding:22px}.ticketSideTitle{grid-column:1;grid-row:1;font-size:26px}.ticketSideTitle small{font-size:17px}.ticketSideBody .barcode{grid-column:1;grid-row:2;width:min(100%,260px);height:auto;justify-self:center}.ticketWish{grid-column:1;grid-row:3;font-size:13px;text-align:center}.reviews{grid-template-columns:1fr}.reviewGroupTitle small{display:block;margin:8px 0 0}.review p{font-size:16px}.brand{font-size:15px}}
 @media(max-width:420px){.flight{grid-template-columns:1fr;gap:18px}.ticketMain{gap:26px}.flight .ticketValue{font-size:18px}}
 </style>
+<style id="review-round-two">
+/* Review round: unlocked stops, visible lock, and full-frame finale. */
+.nextGrid .mini .unlockedMark{position:absolute;left:auto;right:8px;top:7px;z-index:2;display:grid;place-items:center;width:28px;height:28px;padding:0;border-radius:50%;background:#166f54;color:white;border:2px solid #fff;font:900 18px/1 sans-serif;box-shadow:0 2px 8px #0004}
+.locked button{inset:0 0 auto;height:auto;aspect-ratio:1.35/1;display:grid;place-items:center}
+.lockIcon{position:static;transform:none;width:58px;height:58px;border:2px solid #fff9;background:#16364be8;color:#ffd12e;box-shadow:0 5px 20px #0006}
+.lockIcon svg{width:31px;height:35px}.locked .lockIcon:before,.locked.unlocking .lockIcon:before{content:none}.locked.unlocking .lockIcon{transform:scale(.85);opacity:.4}
+.finalOverlay.open{display:flex;align-items:center;justify-content:center;padding:20px}.finalOverlay img{display:block;width:100%;height:100%;object-fit:contain}.finalClose{z-index:2}
+@media(max-width:640px){.finalOverlay.open{padding:10px}.lockIcon{width:62px;height:62px}}
+</style>
 </head>
 <body>
 <nav class="nav"><div class="brand">BMW <span>HONGHWA</span></div><div class="navlinks">
@@ -223,8 +232,7 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
     <div class="journalSubline"><span class="journalSun">✳</span> OUR LITTLE TRAVEL MEMORIES <span class="journalSun">✳</span></div>
   </div>
   <div class="journalScene journalVideoScene" aria-label="旅行手帳影片">
-    <video id="journeyNotesVideo" muted playsinline preload="metadata" poster="assets/images/journey-notes-poster.jpg" aria-label="旅行手帳桌面，無聲播放一次" width="1916" height="1080"><source src="assets/videos/journey-notes.mp4" type="video/mp4"></video>
-    <img class="journalFinalFrame" src="assets/images/journey-notes-last.jpg" width="1916" height="1080" alt="旅行手帳影片的最後畫面" hidden>
+    <video id="journeyNotesVideo" loop muted playsinline preload="metadata" poster="assets/images/journey-notes-poster.jpg" aria-label="旅行手帳桌面，靜音循環播放" width="1916" height="1080"><source src="assets/videos/journey-notes.mp4" type="video/mp4"></video>
     <button class="journalPlay" type="button" hidden>播放旅行手帳影片</button>
     <p class="journalVideoError" hidden>影片暫時無法載入，請重新整理頁面再試。</p>
   </div>
@@ -287,27 +295,27 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 </button></div></div>
 </section>
 
-<section class="section reviewsSec" id="voices"><div class="shell"><div class="kicker">TRAVELERS' VOICES</div><h2>來自旅伴的五星推薦</h2><p class="lede">關於學習的收穫，也關於日常裡一起前進的夥伴。</p><p class="reviewRatingNote">星號為視覺裝飾，非問卷評分。</p><h3 class="reviewGroupTitle">學習路上的收穫 <small>COURSE NOTES · 08</small></h3><div class="reviews"><article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>課程中教學的自我檢視工作效能方法簡明易懂，亦可透用在個人學習、生活規劃上起到去蕪存菁的功用，對於提升個人工作的效率是有幫助的，工作有效率、生活也會更輕鬆自在些，惟知易行難，改變習慣不容易，改變後的堅持下去更是挑戰，此次課程教學的技巧，實際執行不困難，會努力&quot;堅持&quot;持續&quot;下去，希望今年於工作、生活都可以達成個人期望的目標。</p><span>【管理效能聚焦：找回主管的節奏與熱情】</span></article>
+<section class="section reviewsSec" id="voices"><div class="shell"><div class="kicker">TRAVELERS' VOICES</div><h2>來自旅伴的五星推薦</h2><p class="lede">關於學習的收穫，也關於日常裡一起前進的夥伴。</p><h3 class="reviewGroupTitle">學習路上的收穫 <small>COURSE NOTES · 08</small></h3><div class="reviews"><article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>課程中教學的自我檢視工作效能方法簡明易懂，亦可透用在個人學習、生活規劃上起到去蕪存菁的功用，對於提升個人工作的效率是有幫助的，工作有效率、生活也會更輕鬆自在些，惟知易行難，改變習慣不容易，改變後的堅持下去更是挑戰，此次課程教學的技巧，實際執行不困難，會努力&quot;堅持&quot;持續&quot;下去，希望今年於工作、生活都可以達成個人期望的目標。</p><span>【管理效能聚焦：找回主管的節奏與熱情】</span></article>
 <article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>本次課程可感受到事前經過充分溝通故能產生工作上問題共鳴，進而可吸取課堂上所需，並著手精進工作效能。</p><span>【管理效能聚焦：找回主管的節奏與熱情】</span></article>
 <article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>主管的影響力，不單只是一次重大的決策，是在每天持續所做所為的正確選擇；團隊的樣子，也是這些累積後最真實的展現。   要做的是從自身開始，轉化思維在現場不斷成長</p><span>AI時代的管理影響力-讓團隊願意展現最好的自己</span></article>
 <article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>主管日常的一句話、一個反應、一套標準都是影響團隊生命力的重要因子</p><span>AI時代的管理影響力-讓團隊願意展現最好的自己</span></article>
 <article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>不要以為自己已看清事情全貌，多問多探索，會有不同的結果，客戶的反應都是訊號，並不代表結果</p><span>OB實務應用班</span></article>
 <article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>以前聽到客戶說「不需要、夠用了」很容易就直接放棄。上完課才發現這只是表面的冰山，背後其實有其他顧慮。最大的收穫是學會「穩、接、聚、續」的節奏，把拒絕當成訊號，用工具箱裡的問法多接一句，讓對話能繼續講下去</p><span>OB實務應用班</span></article>
 <article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>扭轉對「向上溝通」的傳統思維，學習站在主管的視角思考</p><span>「成為高效能主管」</span></article>
-<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>透過本次課程，更了解主管應從個人執行者轉變為團隊引導者，學習運用情境領導，依同仁能力與意願調整輔導方式，而非僅以績效數字要求改善。最大的收穫是學會透過客觀數據釐清問題、引導同仁找出真正的執行困難，並設定具體可行的小目標，同時做好時間管理與工作優先順序安排，提升整體管理效能。</p><span>「成為高效能主管」</span></article></div><h3 class="reviewGroupTitle">並肩同行的支持 <small>TEAM VOICES · 08</small></h3><div class="reviews"><article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「工作指標落後，請求組長協助，組長能以最快速度提供處理方向解決問題」</p><span>二處</span></article>
-<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「組長能給我突破性的話術」，並有耐心聽完困難處</p><span>一處</span></article>
-<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「不會一昧認為只要被開單就一定是組員的錯，願瞭解實際狀況給予建議及改善方向，非常讚」</p><span>一處</span></article>
-<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「總是很溫和耐性的建議我如何改善」</p><span>二處</span></article>
-<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「不要換組長。我的組長非常棒，有她是一件幸福的事情」</p><span>一處</span></article>
-<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「這裡的上班氛圍很好，上班遇到的困難可以在跟組長的互動得到解決方向，或者獲得啟發」</p><span>二處</span></article>
-<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「我的組長很認真負責，覺得非常的幸運」</p><span>一處</span></article>
-<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「很感謝我遇到一個願意一起並肩作戰的主管，管理上遇到問題向他提出討論皆可得到實質回應及引導我解決方式」</p><span>二處</span></article></div></div></section>
+<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>透過本次課程，更了解主管應從個人執行者轉變為團隊引導者，學習運用情境領導，依同仁能力與意願調整輔導方式，而非僅以績效數字要求改善。最大的收穫是學會透過客觀數據釐清問題、引導同仁找出真正的執行困難，並設定具體可行的小目標，同時做好時間管理與工作優先順序安排，提升整體管理效能。</p><span>「成為高效能主管」</span></article></div><h3 class="reviewGroupTitle">並肩同行的支持 <small>TEAM VOICES · 08</small></h3><div class="reviews teamReviews"><article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「組長能給我突破性的話術」，並有耐心聽完困難處</p><span>客服一處</span></article>
+<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「不會一昧認為只要被開單就一定是組員的錯，願瞭解實際狀況給予建議及改善方向，非常讚」</p><span>客服一處</span></article>
+<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「不要換組長。我的組長非常棒，有她是一件幸福的事情」</p><span>客服一處</span></article>
+<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「我的組長很認真負責，覺得非常的幸運」</p><span>客服一處</span></article>
+<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「工作指標落後，請求組長協助，組長能以最快速度提供處理方向解決問題」</p><span>客服二處</span></article>
+<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「總是很溫和耐性的建議我如何改善」</p><span>客服二處</span></article>
+<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「這裡的上班氛圍很好，上班遇到的困難可以在跟組長的互動得到解決方向，或者獲得啟發」</p><span>客服二處</span></article>
+<article class="review"><div class="stars" aria-hidden="true">★★★★★</div><p>「很感謝我遇到一個願意一起並肩作戰的主管，管理上遇到問題向他提出討論皆可得到實質回應及引導我解決方式」</p><span>客服二處</span></article></div></div></section>
 
 <section class="section memory" id="memories"><div class="shell"><div class="kicker">TRAVEL MEMORIES</div><h2>走過的風景，都是我們的里程。</h2><p class="lede">每一次並肩出發、每一個爆笑瞬間，都會變成下一段旅程的養分。</p><div class="polas"><div class="pola"><img src="assets/images/photo-05-abbd7483.png" alt=""><b>Ride & Laugh</b></div><div class="pola"><img src="assets/images/photo-04-031bd4b8.png" alt=""><b>Find Something New</b></div><div class="pola"><img src="assets/images/photo-06-593936c8.png" alt=""><b>Sunrise Together</b></div><div class="pola"><img src="assets/images/photo-02-9f0b3660.png" alt=""><b>Keep Looking Up</b></div><div class="pola"><img src="assets/images/photo-09-5004dbf9.png" alt=""><b>Spring Escape</b></div><div class="pola"><img src="assets/images/photo-03-bf6a8e51.png" alt=""><b>Desert Surprise</b></div></div></div></section>
 
 <section class="section nextSec" id="next"><div class="shell"><div class="kicker">NEXT STOP...</div><h2>下一站，還有一段風景等著我們一起打開。</h2><p class="lede">前面的路已經走成故事；最後一站暫時留白，等真正走到那裡，再一起揭開。</p>
-<div class="nextGrid"><div class="mini"><img src="assets/images/photo-07-7b7fb677.jpg" alt=""><span>01</span><b>逆風，也擋不住我們出發</b></div><div class="mini"><img src="assets/images/photo-08-9d01d837.png" alt=""><span>02</span><b>每一件行李，都裝著答案</b></div><div class="mini"><img src="assets/images/photo-03-bf6a8e51.png" alt=""><span>03</span><b>這趟旅程，比想像中更豐收</b></div><div class="mini"><img src="assets/images/photo-09-5004dbf9.png" alt=""><span>04</span><b>下一站，轉眼就到了</b></div><div class="mini"><img src="assets/images/photo-02-9f0b3660.png" alt=""><span>05</span><b>窗外的世界，正在加速改變</b></div><div class="mini"><img src="assets/images/photo-06-593936c8.png" alt=""><span>06</span><b>抬頭看，版圖正在變大</b></div>
-<div class="locked" id="locked"><img src="assets/images/photo-10-7f41fbdb.png" alt=""><span class="n">07</span><button id="unlockBtn" aria-label="解鎖第七站"><span class="lockIcon"></span></button><b>等待解鎖的驚喜</b></div>
+<div class="nextGrid"><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/photo-07-7b7fb677.jpg" alt=""><span>01</span><b>逆風，也擋不住我們出發</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/photo-08-9d01d837.png" alt=""><span>02</span><b>每一件行李，都裝著答案</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/photo-03-bf6a8e51.png" alt=""><span>03</span><b>這趟旅程，比想像中更豐收</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/photo-09-5004dbf9.png" alt=""><span>04</span><b>下一站，轉眼就到了</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/photo-02-9f0b3660.png" alt=""><span>05</span><b>窗外的世界，正在加速改變</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/photo-06-593936c8.png" alt=""><span>06</span><b>抬頭看，版圖正在變大</b></div>
+<div class="locked" id="locked"><img src="assets/images/photo-10-7f41fbdb.png" alt=""><span class="n">07</span><button id="unlockBtn" aria-label="解鎖第七站"><span class="lockIcon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M10 14V9a6 6 0 0 1 12 0v5" stroke="currentColor" stroke-width="3"/><rect x="5" y="13" width="22" height="17" rx="4" fill="currentColor"/><path d="M16 20v4" stroke="#16364b" stroke-width="3" stroke-linecap="round"/></svg></span></button><b>等待解鎖的驚喜</b></div>
 </div></div></section>
 
 <div class="overlay" id="detail">
@@ -484,41 +492,32 @@ document.getElementById('finalClose').onclick=()=>{final.classList.remove('open'
 })();
 
 
-// Play this silent clip only once when it enters view; retain the final frame.
+// Start the silent loop when the travel desk enters view.
 (() => {
  const video = document.getElementById('journeyNotesVideo');
  const scene = video.closest('.journalVideoScene');
  const button = scene.querySelector('.journalPlay');
- const last = scene.querySelector('.journalFinalFrame');
  const error = scene.querySelector('.journalVideoError');
- let requested = false, finished = false;
  video.muted = true;
- video.loop = false;
+ video.loop = true;
  const play = () => {
-   if (finished) return;
    button.hidden = true;
    const attempt = video.play();
-   if (attempt) attempt.catch(() => { if (!finished && !video.error) button.hidden = false; });
+   if (attempt) attempt.catch(() => { if (!video.error) button.hidden = false; });
  };
  button.addEventListener('click', play);
- video.addEventListener('ended', () => {
-   finished = true;
-   button.hidden = true;
-   if (last.complete && last.naturalWidth) { last.hidden = false; video.hidden = true; }
-   scene.dataset.playback = 'finished';
- });
  const showError = () => { button.hidden = true; error.hidden = false; };
  video.addEventListener('error', showError);
  video.querySelector('source').addEventListener('error', showError);
  if ('IntersectionObserver' in window) {
    const observer = new IntersectionObserver(entries => {
-     if (!requested && entries.some(e => e.isIntersecting)) {
-       requested = true; observer.disconnect(); scene.dataset.playback = 'started'; play();
+     if (entries.some(e => e.isIntersecting)) {
+       observer.disconnect(); scene.dataset.playback = 'looping'; play();
      }
    }, { threshold: 0.35 });
    observer.observe(video);
  } else { button.hidden = false; }
 })();
 </script>
-<div class="demoBadge">TRAVEL WEBSITE DEMO · 不影響原檔</div>
+<div class="demoBadge">網站導覽</div>
 </body></html>
