@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>BMW 2026｜旅遊網站感示意版</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@600;700&display=swap');
 :root{--ink:#102d49;--blue:#1167a8;--sky:#dff4ff;--accent:#ffd12e;--muted:#6f8190;--bg:#f8fbfd;--card:#fff;--line:rgba(16,45,73,.12);--shadow:0 22px 60px rgba(21,55,83,.13);}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","DM Sans",sans-serif}button{font:inherit}img{display:block}.shell{width:min(1360px,calc(100% - 44px));margin:auto}
 .nav{position:fixed;z-index:50;top:16px;left:50%;transform:translateX(-50%);width:min(1360px,calc(100% - 28px));display:flex;align-items:center;justify-content:space-between;padding:11px 16px;border-radius:999px;background:rgba(8,32,52,.52);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.22);color:#fff}.brand{font-weight:800;letter-spacing:.03em}.brand span{color:var(--accent);font-style:italic}.navlinks{display:flex;gap:22px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.navlinks a{color:#fff;text-decoration:none;opacity:.83}.navlinks a:hover{opacity:1;color:var(--accent)}
@@ -200,6 +199,13 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
+<style id="windows-offline-style">
+/* Offline system-font aliases: no external font request. */
+@font-face{font-family:"Noto Sans TC";src:local("Microsoft JhengHei");font-weight:100 900}
+@font-face{font-family:"DM Sans";src:local("Arial");font-weight:100 900}
+@font-face{font-family:"Noto Serif TC";src:local("PMingLiU");font-weight:100 900}
+.localMoviePane{padding:25px;background:#102d49;color:#fff;min-height:280px}.localMoviePane h3{margin:5px 55px 20px 0;font-size:24px;line-height:1.5}.localMovie{display:block;width:100%;max-height:72vh;background:#000;object-fit:contain;border-radius:12px}.localMovie[hidden]{display:none}.localMovieStatus{font-size:16px;line-height:1.8;color:#e1eff9;margin:14px 0}.localMoviePick{display:inline-flex;padding:12px 20px;background:#ffd12e;color:#102d49;border-radius:9px;font-weight:800;cursor:pointer;position:relative}.localMoviePick:focus-within{outline:3px solid white;outline-offset:3px}.localMoviePick input{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}.localMovieHint{font-size:13px;line-height:1.8;color:#c7dbe9;margin-bottom:0}
+</style>
 </head>
 <body>
 <nav class="nav"><div class="brand">GO:<span>DAYS !!!</span></div><div class="navlinks">
@@ -391,13 +397,44 @@ const data = {
 `
 }
 const overlay=document.getElementById('detail'), body=document.getElementById('detailBody');
+// Local event videos: file selection stays on this computer, with no upload.
+const localMovieFiles = new Map();
+let activeLocalMovie = null;
+function closeLocalMovie() {
+ if (activeLocalMovie) { activeLocalMovie.pause(); activeLocalMovie.removeAttribute('src'); activeLocalMovie.load(); activeLocalMovie = null; }
+ overlay.classList.remove('open'); document.body.style.overflow=''; body.replaceChildren();
+}
 document.querySelectorAll('.story').forEach(btn=>btn.addEventListener('click',()=>{
-  const id=btn.dataset.story;
-  body.innerHTML=id==='01' ? '<div class="storyVideoWrap"><iframe class="storyVideo" src="https://www.youtube.com/embed/9FbBOKy4SB4?autoplay=1&amp;playsinline=1&amp;rel=0" title="01 年度挑戰影片" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="storyVideoHelp">若未自動播放，請按播放器的播放鍵。亦可<a href="https://youtu.be/9FbBOKy4SB4" target="_blank" rel="noopener noreferrer">在 YouTube 觀看</a>。</p></div>' : data[id];
-  overlay.classList.add('open'); document.body.style.overflow='hidden';
+ const id=btn.dataset.story;
+ body.replaceChildren();
+ const pane=document.createElement('section'); pane.className='localMoviePane';
+ const heading=document.createElement('h3'); heading.textContent=id+' · '+btn.getAttribute('aria-label');
+ const movie=document.createElement('video');movie.className='localMovie';movie.controls=true;movie.playsInline=true;movie.preload='metadata';movie.muted=false;movie.loop=false;movie.setAttribute('aria-label',heading.textContent);
+ const status=document.createElement('p');status.className='localMovieStatus';status.setAttribute('role','status');
+ const picker=document.createElement('label');picker.className='localMoviePick';picker.append('選擇這一站的影片');
+ const input=document.createElement('input');input.type='file';input.accept='video/mp4,video/webm,video/quicktime,.m4v';input.setAttribute('aria-label','選擇第'+id+'站的本機影片');picker.append(input);
+ const hint=document.createElement('p');hint.className='localMovieHint';hint.textContent='影片只在這台電腦播放，不會上傳。關閉瀏覽器後需重新選取；建議使用 MP4（H.264＋AAC）。';
+ pane.append(heading,movie,status,picker,hint);body.append(pane);overlay.classList.add('open');document.body.style.overflow='hidden';activeLocalMovie=movie;
+ const playMovie=src=>{
+  status.textContent='影片載入中…';movie.hidden=false;movie.src=src;
+  const result=movie.play();if(result)result.catch(error=>{if(activeLocalMovie===movie && !movie.error && error.name!=='AbortError')status.textContent='請按影片上的播放鍵開始播放。';});
+ };
+ movie.addEventListener('playing',()=>{status.textContent='';});
+ movie.addEventListener('error',()=>{
+  movie.hidden=true;
+  status.textContent=localMovieFiles.has(id)?'這支影片無法播放。請確認格式為 MP4（H.264＋AAC），或選擇另一個檔案。':'尚未選擇第'+id+'站影片，請按下方按鈕選取電腦中的影片。';
+ });
+ input.addEventListener('change',()=>{
+  const file=input.files[0];if(!file)return;
+  const previous=localMovieFiles.get(id);if(previous)URL.revokeObjectURL(previous);
+  const src=URL.createObjectURL(file);localMovieFiles.set(id,src);playMovie(src);
+ });
+ playMovie(localMovieFiles.get(id)||'videos/station-'+id+'.mp4');
 }));
-document.getElementById('closeDetail').onclick=()=>{body.querySelectorAll('iframe').forEach(frame=>frame.remove());overlay.classList.remove('open');document.body.style.overflow='';};
-overlay.addEventListener('click',e=>{if(e.target===overlay) document.getElementById('closeDetail').click()});
+document.getElementById('closeDetail').onclick=closeLocalMovie;
+overlay.addEventListener('click',e=>{if(e.target===overlay)closeLocalMovie();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape' && !document.fullscreenElement && overlay.classList.contains('open'))closeLocalMovie();});
+window.addEventListener('beforeunload',()=>{localMovieFiles.forEach(src=>URL.revokeObjectURL(src));});
 function beep(freq=700,dur=.05){
  try{const ctx=new (window.AudioContext||window.webkitAudioContext)(); const o=ctx.createOscillator(); const g=ctx.createGain();o.frequency.value=freq;g.gain.value=.035;o.connect(g);g.connect(ctx.destination);o.start();o.stop(ctx.currentTime+dur);}catch(e){}
 }
