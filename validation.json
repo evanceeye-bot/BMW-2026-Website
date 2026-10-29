@@ -1,0 +1,20 @@
+{
+  "source_commit": "d6d4237063dece47b2bb567e62b9a388baea3f7a",
+  "duration_seconds": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "audio_streams": 0,
+  "featured_reviews": 6,
+  "wall_reviews": 16,
+  "file_bytes": 10393015,
+  "decode_check": "ffmpeg full-file decode passed",
+  "check": "passed",
+  "contrast_checks_passed": 159,
+  "reviewed_warnings": [
+    "User requested silence",
+    "16-card wall is an overview; longer reviews require paused viewing"
+  ]
+}
