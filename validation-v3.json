@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "source_commit": "d6d4237063dece47b2bb567e62b9a388baea3f7a",
+  "duration_seconds": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "audio_streams": 0,
+  "featured_reviews": 16,
+  "reviews_per_group": 2,
+  "group_interval_seconds": 3,
+  "closing_seconds": 6,
+  "wall_reviews": 16,
+  "file_bytes": 14424466,
+  "decode_check": "ffmpeg full-file decode passed",
+  "check": "passed",
+  "contrast_checks_passed": 246,
+  "contrast_checks_total": 247,
+  "reviewed_warnings": [
+    "User requested silence",
+    "Reading cadence and reduced text in final wall",
+    "One background source label has lower contrast while covered by a moving foreground card at 21.667 seconds"
+  ]
+}
