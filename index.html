@@ -456,10 +456,11 @@ document.getElementById('finalClose').onclick=()=>{final.classList.remove('open'
       for (const letter of values[i]) {
         if (finished) return;
         field.lastElementChild.textContent += letter;
-        await pause(70);
+        const delay = /[，。！？、：；·—]/u.test(letter) ? 340 + Math.random() * 160 : 120 + Math.random() * 80;
+        await pause(delay);
       }
       field.classList.remove('isTyping');
-      await pause(380);
+      await pause(650 + Math.random() * 250);
     }
     finish();
   };
