@@ -1,0 +1,24 @@
+{
+  "source_commit": "d6d4237063dece47b2bb567e62b9a388baea3f7a",
+  "version": 2,
+  "duration_seconds": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "audio_streams": 0,
+  "featured_reviews": 16,
+  "reviews_per_group": 2,
+  "group_interval_seconds": 2.4,
+  "wall_reviews": 16,
+  "file_bytes": 12974720,
+  "decode_check": "ffmpeg full-file decode passed",
+  "check": "passed",
+  "contrast_checks_passed": 241,
+  "reviewed_warnings": [
+    "User requested silence",
+    "User requested faster reading cadence",
+    "16-card wall is a collection overview"
+  ]
+}

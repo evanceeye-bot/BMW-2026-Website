@@ -1,15 +1,18 @@
-# BMW 2026｜24秒旅伴明信片
+# BMW 2026｜24秒旅伴明信片 v2
 
-直接開啟 `bmw-travelers-postcards-24s.mp4`，按 Download raw file 即可下載。
+下載新版：`bmw-travelers-postcards-24s-v2.mp4`，開啟後按 Download raw file。
 
 - 24秒 / 1920×1080 / 30fps / H.264 MP4 / 無音訊軌
-- 6則重點留言：滑入、愛心形郵戳、移向牆面；沒有翻面
-- 最後拉遠呈現全部16則原文與來源
-- 原網站 gh-pages 指定來源：d6d4237063dece47b2bb567e62b9a388baea3f7a
-- 不修改 main 或 gh-pages；此分支是獨立影片專案
-- quotes.json 保留16則全文、來源與重點摘錄紀錄
-- 最後明信片牆是全貌，長留言無法在24秒內全部讀完
+- 16則全部輪流放大，每次並排2張，約2.4秒換組；比v1停頓短
+- 小型紅色愛心墨印；木柄印章短促按壓、離開；拿掉心形框內的BMW/2026文字與放大彈跳
+- 最後拉遠呈現全部16則完整原文與來源
+- 長留言在放大時使用連續原文摘錄，畫面標示「留言原文摘錄」；最後牆面恢復全文
+- quotes.json 記錄16則全文、摘錄及來源，沒有改寫引言
+- 原網站來源：gh-pages / d6d4237063dece47b2bb567e62b9a388baea3f7a
+- main與gh-pages未修改；此分支是獨立影片專案
 
-重製：安裝 Node >=22、FFmpeg、Chromium 與 Noto CJK TC 字型後，執行 `npm run check`，再執行 `HYPERFRAMES_BROWSER_PATH=/usr/bin/chromium npm run render -- --fps 30 --quality high --workers 2 --output bmw-travelers-postcards-24s.mp4`。
+舊版保留為 `bmw-travelers-postcards-24s.mp4`，便於比較。
 
-已完成完整解碼檢查；lint/runtime/layout零錯誤，對比159/159通過。保留使用者指定無聲、閱讀時間與縮小字體的craft警告。
+重製：Node >=22、FFmpeg、Chromium、Noto CJK TC字型。執行 `npm run check`，再以 `HYPERFRAMES_BROWSER_PATH=/usr/bin/chromium npm run render -- --fps 30 --quality high --workers 2 --output bmw-travelers-postcards-24s-v2.mp4` 輸出。
+
+v2完整check通過：lint/runtime/layout零錯誤、對比241/241通過。檢查保留使用者指定無聲、快速節奏閱讀時間、縮小卡牆字體等craft警告。24秒內不預期能讀完所有全文。
