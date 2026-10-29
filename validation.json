@@ -1,0 +1,21 @@
+{
+  "source_commit": "d6d4237063dece47b2bb567e62b9a388baea3f7a",
+  "duration_seconds": 18,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "frames": 540,
+  "audio_streams": 0,
+  "file_bytes": 8250877,
+  "decode_check": "ffmpeg full-file decode passed",
+  "hyperframes_check": "passed",
+  "layout_errors": 0,
+  "runtime_errors": 0,
+  "contrast_checks_passed": 26,
+  "reviewed_warnings": [
+    "Silence is explicitly requested.",
+    "Text shrinks during intentional final pullback; complete quotes are readable full-size beforehand."
+  ]
+}
