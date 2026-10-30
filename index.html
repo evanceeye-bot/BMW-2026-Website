@@ -237,6 +237,18 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 #stories .story:before,#stories .story:after{content:none;display:none}
 #stories .story:focus-visible{outline:3px solid #1167a8;outline-offset:4px;border-radius:20px}
 </style>
+
+<style id="next-six-covers">
+#next .nextGrid{grid-template-columns:repeat(6,minmax(0,1fr))}
+#next .nextGrid img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;border-radius:0}
+#next .mini img{filter:grayscale(1) brightness(.65)}
+#next .locked img{filter:none}
+#next .locked button{aspect-ratio:1/1}
+#next .locked .lockIcon{background:#16364bf2;border-color:#fff;color:#ffd12e;box-shadow:0 4px 16px #0008}
+#next .locked button:focus-visible{outline:3px solid #1167a8;outline-offset:3px;border-radius:12px}
+@media(max-width:980px){#next .nextGrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:640px){#next .nextGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
 </head>
 <body>
 <nav class="nav"><div class="brand">GO:<span>DAYS !!!</span></div><div class="navlinks">
@@ -318,9 +330,7 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 <section class="section memory" id="memories"><div class="shell"><div class="kicker">TRAVEL MEMORIES</div><h2>走過的風景，都是我們的里程。</h2><p class="lede">每一次並肩出發、每一個爆笑瞬間，都會變成下一段旅程的養分。</p><div class="polas"><div class="pola"><img src="assets/images/photo-05-abbd7483.png" alt=""><b>Ride & Laugh</b></div><div class="pola"><img src="assets/images/photo-04-031bd4b8.png" alt=""><b>Find Something New</b></div><div class="pola"><img src="assets/images/photo-06-593936c8.png" alt=""><b>Sunrise Together</b></div><div class="pola"><img src="assets/images/photo-02-9f0b3660.png" alt=""><b>Keep Looking Up</b></div><div class="pola"><img src="assets/images/photo-09-5004dbf9.png" alt=""><b>Spring Escape</b></div><div class="pola"><img src="assets/images/photo-03-bf6a8e51.png" alt=""><b>Desert Surprise</b></div></div></div></section>
 
 <section class="section nextSec" id="next"><div class="shell"><div class="kicker">NEXT STOP...</div><h2>下一站，還有一段風景等著我們一起打開。</h2><p class="lede">前面的路已經走成故事；最後一站暫時留白，等真正走到那裡，再一起揭開。</p>
-<div class="nextGrid"><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/photo-07-7b7fb677.jpg" alt=""><span>01</span><b>逆風，也擋不住我們出發</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/photo-08-9d01d837.png" alt=""><span>02</span><b>每一件行李，都裝著答案</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/photo-03-bf6a8e51.png" alt=""><span>03</span><b>這趟旅程，比想像中更豐收</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/photo-09-5004dbf9.png" alt=""><span>04</span><b>下一站，轉眼就到了</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/photo-02-9f0b3660.png" alt=""><span>05</span><b>窗外的世界，正在加速改變</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/photo-06-593936c8.png" alt=""><span>06</span><b>抬頭看，版圖正在變大</b></div>
-<div class="locked" id="locked"><img src="assets/images/photo-10-7f41fbdb.png" alt=""><span class="n">07</span><button id="unlockBtn" aria-label="解鎖第七站"><span class="lockIcon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M10 14V9a6 6 0 0 1 12 0v5" stroke="currentColor" stroke-width="3"/><rect x="5" y="13" width="22" height="17" rx="4" fill="currentColor"/><path d="M16 20v4" stroke="#16364b" stroke-width="3" stroke-linecap="round"/></svg></span></button><b>等待解鎖的驚喜</b></div>
-</div></div></section>
+<div class="nextGrid"><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-cover-01.jpg" alt="出發吧！旅行模式 ON" width="1254" height="1254" loading="lazy"><b>出發吧！旅行模式 ON</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-cover-02.jpg" alt="行李箱裡，藏著什麼秘密？" width="1254" height="1254" loading="lazy"><b>行李箱裡，藏著什麼秘密？</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-cover-03.jpg" alt="空中限定！本期必看" width="1254" height="1254" loading="lazy"><b>空中限定！本期必看</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-cover-04.jpg" alt="旅行開外掛！私藏路線大公開" width="1254" height="1254" loading="lazy"><b>旅行開外掛！私藏路線大公開</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-cover-05.jpg" alt="一生至少一次！夢幻體驗清單" width="1254" height="1254" loading="lazy"><b>一生至少一次！夢幻體驗清單</b></div><div class="locked" id="locked"><img src="assets/images/story-cover-06.jpg" alt="才剛回來，又想訂機票了？" width="1254" height="1254" loading="lazy"><button id="unlockBtn" aria-label="解鎖第六站，開啟下一站驚喜"><span class="lockIcon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M10 14V9a6 6 0 0 1 12 0v5" stroke="currentColor" stroke-width="3"/><rect x="5" y="13" width="22" height="17" rx="4" fill="currentColor"/><path d="M16 20v4" stroke="#16364b" stroke-width="3" stroke-linecap="round"/></svg></span></button><b>才剛回來，又想訂機票了？</b></div></div></div></section>
 
 <div class="overlay" id="detail">
 <div class="panel"><button class="close" id="closeDetail">×</button><div id="detailBody"></div></div>
