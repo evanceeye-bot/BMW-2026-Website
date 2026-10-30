@@ -1,0 +1,37 @@
+{
+  "version": 4,
+  "source_commit": "d6d4237063dece47b2bb567e62b9a388baea3f7a",
+  "duration_seconds": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "audio_streams": 0,
+  "featured_reviews": 16,
+  "reviews_per_group": 2,
+  "group_durations": [
+    3.2,
+    2.4,
+    3.5,
+    4,
+    2.9,
+    2,
+    2.5,
+    3.5
+  ],
+  "reading_budget_seconds": 24,
+  "closing_seconds": 6,
+  "file_bytes": 14378405,
+  "decode_check": "ffmpeg full-file decode passed",
+  "check": "passed",
+  "contrast_checks_passed": 236,
+  "contrast_checks_total": 237,
+  "quotes_unchanged_from_v3": true,
+  "reviewed_warnings": [
+    "User requested silence",
+    "User requested shorter holds for short text",
+    "Final wall is a collection overview",
+    "Background source label during intentional overlap at 21.667s"
+  ]
+}
