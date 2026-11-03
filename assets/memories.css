@@ -103,3 +103,26 @@
 .memoryAlbum[data-theme="dialogue"] .albumThumbs span{display:block;margin-top:8px;padding:0 2px;font-size:12px;line-height:1.7;color:#31554e}
 .memoryAlbum[data-theme="dialogue"]:not(.isViewingPhoto) .albumThumbs button[aria-current="true"]{border-color:transparent;background:#fff}
 @media(max-width:860px){.memoryAlbum[data-theme="dialogue"] .albumThumbs{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.memoryAlbum[data-theme="dialogue"] .albumThumbs button{padding:5px}.memoryAlbum[data-theme="dialogue"] .albumThumbs span{font-size:11px}}
+/* Youthful photo board, with the pictures doing the talking. */
+.memoryAlbum[data-theme="dialogue"]{--album-accent:#268da0;--album-tint:#e7f4f5;background-color:#f5fbfc;background-image:radial-gradient(circle at 5% 0,#ffe29b80,transparent 36%),radial-gradient(circle at 100% 90%,#f6c9d45c,transparent 40%),radial-gradient(#8eb4bf40 .8px,transparent .8px);background-size:100% 100%,100% 100%,14px 14px;border:2px solid #fff;border-radius:24px;padding:32px}
+.memoryAlbum[data-theme="dialogue"] .albumHead{border-bottom:1px dashed #8bbbc4;margin-bottom:18px}
+.memoryAlbum[data-theme="dialogue"] .albumHead:after{content:"HELLO, TOGETHER!";border:0;border-radius:999px;background:#ffe28b;color:#674c22;transform:rotate(7deg);height:38px;width:160px;opacity:1;box-shadow:0 3px 0 #e8c56c66;font-weight:800}
+.memoryAlbum[data-theme="dialogue"] .albumEyebrow{color:#27859a}
+.memoryAlbum[data-theme="dialogue"] h2{color:#174961}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs{gap:26px;padding:8px 12px 20px}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs:before{content:"每一次相聚，都值得收藏 · 點照片放大";color:#528792;line-height:1.8;margin-bottom:6px}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs button{position:relative;padding:10px 10px 22px;border:0;border-radius:2px;background:#fff;box-shadow:0 8px 18px #1b536025;transform:rotate(-1.5deg);transition:transform .2s ease,box-shadow .2s ease}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs button:nth-of-type(3n+2){transform:rotate(1.5deg)}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs button:nth-of-type(3n){transform:rotate(-.7deg)}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs button:before{content:"";position:absolute;z-index:2;top:-7px;left:calc(50% - 23px);width:46px;height:16px;transform:rotate(-5deg);background:#ffd66fa6}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs button:nth-of-type(3n+2):before{background:#f2a8b6a6;transform:rotate(5deg)}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs button:nth-of-type(3n):before{background:#88d7d6a6}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs img{aspect-ratio:4/3;background:#f3f8fa;object-fit:contain;border-radius:0}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs button:hover{transform:translateY(-4px) rotate(0);box-shadow:0 12px 22px #1b536035}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs button[aria-current="true"]{background:#fff;outline:2px solid #268da0;outline-offset:3px}
+.memoryAlbum[data-theme="dialogue"]:not(.isViewingPhoto) .albumThumbs button[aria-current="true"]{outline:none}
+.memoryAlbum[data-theme="dialogue"] .albumCaption{display:none}
+.memoryAlbum[data-theme="dialogue"] .albumPlay{background:#23899a}
+.memoryAlbum[data-theme="dialogue"] .albumStage{border:7px solid #fff;border-radius:5px;width:calc(100% - 14px);box-sizing:content-box}
+@media(max-width:640px){.memoryAlbum[data-theme="dialogue"]{padding:20px 14px}.memoryAlbum[data-theme="dialogue"] .albumThumbs{gap:21px 14px;padding:6px 5px 16px}.memoryAlbum[data-theme="dialogue"] .albumThumbs button{padding:6px 6px 15px}.memoryAlbum[data-theme="dialogue"] .albumThumbs:before{font-size:12px}.memoryAlbum[data-theme="dialogue"] .albumHead>div{padding-right:20px}}
+@media(prefers-reduced-motion:reduce){.memoryAlbum[data-theme="dialogue"] .albumThumbs button{transition:none}}

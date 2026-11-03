@@ -251,91 +251,73 @@
   {
     "id": "dialogue",
     "title": "員工座談會",
-    "description": "讓交流被聽見，讓每一次相聚成為一起前進的起點。",
+    "description": "一起聊聊、一起笑，把每一次相聚收藏成我們的回憶。",
     "photos": [
       {
-        "src": "assets/images/memories/dialogue-01.webp",
-        "thumbnail": "assets/images/memories/dialogue-01-thumb.webp",
-        "caption": "台中梅亭 · 上午場",
-        "alt": "台中梅亭 · 上午場照片"
+        "src": "assets/images/memories/dialogue-new-01.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-01-thumb.webp",
+        "caption": "",
+        "alt": "員工座談會交流合影，第 1 張"
       },
       {
-        "src": "assets/images/memories/dialogue-02.webp",
-        "thumbnail": "assets/images/memories/dialogue-02-thumb.webp",
-        "caption": "台中梅亭 · 下午場",
-        "alt": "台中梅亭 · 下午場照片"
+        "src": "assets/images/memories/dialogue-new-02.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-02-thumb.webp",
+        "caption": "",
+        "alt": "員工座談會交流合影，第 2 張"
       },
       {
-        "src": "assets/images/memories/dialogue-03.webp",
-        "thumbnail": "assets/images/memories/dialogue-03-thumb.webp",
-        "caption": "四部 · 座談合照",
-        "alt": "四部 · 座談合照照片"
+        "src": "assets/images/memories/dialogue-new-03.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-03-thumb.webp",
+        "caption": "",
+        "alt": "員工座談會交流合影，第 3 張"
       },
       {
-        "src": "assets/images/memories/dialogue-04.webp",
-        "thumbnail": "assets/images/memories/dialogue-04-thumb.webp",
-        "caption": "四部 · 座談現場",
-        "alt": "四部 · 座談現場照片"
+        "src": "assets/images/memories/dialogue-new-04.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-04-thumb.webp",
+        "caption": "",
+        "alt": "員工座談會交流合影，第 4 張"
       },
       {
-        "src": "assets/images/memories/dialogue-05.webp",
-        "thumbnail": "assets/images/memories/dialogue-05-thumb.webp",
-        "caption": "四部 · 交流分享",
-        "alt": "四部 · 交流分享照片"
+        "src": "assets/images/memories/dialogue-new-05.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-05-thumb.webp",
+        "caption": "",
+        "alt": "員工座談會交流合影，第 5 張"
       },
       {
-        "src": "assets/images/memories/dialogue-06.webp",
-        "thumbnail": "assets/images/memories/dialogue-06-thumb.webp",
-        "caption": "五部 · 座談合照",
-        "alt": "五部 · 座談合照照片"
+        "src": "assets/images/memories/dialogue-new-06.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-06-thumb.webp",
+        "caption": "",
+        "alt": "員工座談會交流合影，第 6 張"
       },
       {
-        "src": "assets/images/memories/dialogue-07.webp",
-        "thumbnail": "assets/images/memories/dialogue-07-thumb.webp",
-        "caption": "十部 · 座談合照",
-        "alt": "十部 · 座談合照照片"
+        "src": "assets/images/memories/dialogue-new-07.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-07-thumb.webp",
+        "caption": "",
+        "alt": "員工座談會交流合影，第 7 張"
       },
       {
-        "src": "assets/images/memories/dialogue-08.webp",
-        "thumbnail": "assets/images/memories/dialogue-08-thumb.webp",
-        "caption": "十部 · 座談合照",
-        "alt": "十部 · 座談合照照片"
+        "src": "assets/images/memories/dialogue-new-08.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-08-thumb.webp",
+        "caption": "",
+        "alt": "員工座談會交流合影，第 8 張"
       },
       {
-        "src": "assets/images/memories/dialogue-09.webp",
-        "thumbnail": "assets/images/memories/dialogue-09-thumb.webp",
-        "caption": "台中 · 座談合照",
-        "alt": "台中 · 座談合照照片"
+        "src": "assets/images/memories/dialogue-new-09.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-09-thumb.webp",
+        "caption": "",
+        "alt": "員工座談會交流合影，第 9 張"
       },
       {
-        "src": "assets/images/memories/dialogue-10.webp",
-        "thumbnail": "assets/images/memories/dialogue-10-thumb.webp",
-        "caption": "台北 · 座談合照",
-        "alt": "台北 · 座談合照照片"
+        "src": "assets/images/memories/dialogue-new-10.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-10-thumb.webp",
+        "caption": "",
+        "alt": "員工座談會交流合影，第 10 張"
       },
       {
-        "src": "assets/images/memories/dialogue-11.webp",
-        "thumbnail": "assets/images/memories/dialogue-11-thumb.webp",
-        "caption": "座談現場合照",
-        "alt": "座談現場合照照片"
-      },
-      {
-        "src": "assets/images/memories/dialogue-12.webp",
-        "thumbnail": "assets/images/memories/dialogue-12-thumb.webp",
-        "caption": "板橋 · 座談合照",
-        "alt": "板橋 · 座談合照照片"
-      },
-      {
-        "src": "assets/images/memories/dialogue-13.webp",
-        "thumbnail": "assets/images/memories/dialogue-13-thumb.webp",
-        "caption": "高雄 · 座談合照",
-        "alt": "高雄 · 座談合照照片"
-      },
-      {
-        "src": "assets/images/memories/dialogue-14.webp",
-        "thumbnail": "assets/images/memories/dialogue-14-thumb.webp",
-        "caption": "座談現場合照",
-        "alt": "座談現場合照照片"
+        "src": "assets/images/memories/dialogue-new-11.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-11-thumb.webp",
+        "caption": "",
+        "alt": "員工座談會交流合影，第 11 張"
       }
     ]
   }
