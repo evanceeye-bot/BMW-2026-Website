@@ -91,3 +91,15 @@
 .memoryAlbum[data-theme="dialogue"] .albumHead:after{display:none}
 }
 @media(prefers-reduced-motion:reduce){.memoryAlbum[data-theme="dialogue"] .albumMainImage{animation:none}}
+/* Open the dialogue album as a complete photo wall. */
+.memoryAlbum[data-theme="dialogue"][open]{display:block}
+.memoryAlbum[data-theme="dialogue"]:not(.isViewingPhoto) .albumStage,
+.memoryAlbum[data-theme="dialogue"]:not(.isViewingPhoto) .albumControls,
+.memoryAlbum[data-theme="dialogue"]:not(.isViewingPhoto) .albumCaption{display:none}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;max-height:none;overflow:visible;padding:4px;scroll-snap-type:none;margin-top:22px}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs:before{content:"全部 14 張照片 · 點照片放大";display:block;position:static;grid-column:1/-1;background:none;font-size:13px}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs button{display:block;width:100%;height:auto;min-height:0;padding:8px;flex:none;border:2px solid transparent;border-radius:8px;background:#fff;box-shadow:0 3px 12px #173c3212}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#eaf0ed;border-radius:4px}
+.memoryAlbum[data-theme="dialogue"] .albumThumbs span{display:block;margin-top:8px;padding:0 2px;font-size:12px;line-height:1.7;color:#31554e}
+.memoryAlbum[data-theme="dialogue"]:not(.isViewingPhoto) .albumThumbs button[aria-current="true"]{border-color:transparent;background:#fff}
+@media(max-width:860px){.memoryAlbum[data-theme="dialogue"] .albumThumbs{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.memoryAlbum[data-theme="dialogue"] .albumThumbs button{padding:5px}.memoryAlbum[data-theme="dialogue"] .albumThumbs span{font-size:11px}}
