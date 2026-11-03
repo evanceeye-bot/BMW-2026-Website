@@ -20,12 +20,13 @@
     select('.albumCounter').textContent = `${index + 1} / ${photos.length}`;
     [...thumbs.children].forEach((button, i) => button.setAttribute('aria-current', String(i === index)));
     const active = thumbs.children[index];
+    if (active && current.id === 'dialogue' && matchMedia('(min-width:861px)').matches) thumbs.scrollTop = active.offsetTop - thumbs.offsetTop - 45;
     if (active) thumbs.scrollLeft = active.offsetLeft - thumbs.offsetLeft - thumbs.clientWidth / 2 + active.clientWidth / 2;
   }
   function open(album, button) {
     stop(); current = album; index = 0; returnFocus = button;
     dialog.dataset.theme = album.id;
-    select('.albumEyebrow').textContent = `PHOTO DIARY / ${String(entries.indexOf(button) + 1).padStart(2, '0')}`;
+    select('.albumEyebrow').textContent = album.id === 'dialogue' ? 'TEAM DIALOGUE / 聽見彼此' : `PHOTO DIARY / ${String(entries.indexOf(button) + 1).padStart(2, '0')}`;
     select('#memoryAlbumTitle').textContent = album.title;
     select('#memoryAlbumDescription').textContent = album.description;
     thumbs.replaceChildren();
@@ -42,7 +43,9 @@
       const thumb = document.createElement('button'); thumb.type = 'button';
       thumb.setAttribute('aria-label', `查看第 ${i + 1} 張照片`);
       const img = document.createElement('img'); img.src = photo.thumbnail || photo.src; img.alt = ''; img.loading = 'lazy';
-      thumb.append(img); thumb.addEventListener('click', () => { stop(); show(i); }); thumbs.append(thumb);
+      thumb.append(img);
+      if (album.id === 'dialogue') { const label = document.createElement('span'); label.textContent = `${String(i + 1).padStart(2, '0')} · ${photo.caption}`; thumb.append(label); }
+      thumb.addEventListener('click', () => { stop(); show(i); }); thumbs.append(thumb);
     });
     oldOverflow = document.body.style.overflow; document.body.style.overflow = 'hidden';
     dialog.showModal(); dialog.scrollTop = 0;
@@ -111,11 +114,11 @@
   rail.addEventListener('click', event => { if (suppressClick) {event.preventDefault();event.stopImmediatePropagation();} }, true);
   updateArrows();
 
-  const ready = fetch('assets/memories.json').then(response => { if (!response.ok) throw new Error('Album data unavailable'); return response.json(); }).then(data => {
+  const ready = fetch('assets/memories.json?v=3').then(response => { if (!response.ok) throw new Error('Album data unavailable'); return response.json(); }).then(data => {
     albums = data;
     entries.forEach(button => {
       const album = albums.find(item => item.id === button.dataset.album);
-      if (album?.photos.length) button.querySelector('.albumEntryNote').textContent = `${album.photos.length} 張照片 · 點開相簿 ↗`;
+      if (album?.photos.length) button.querySelector('.albumEntryNote').textContent = `${album.photos.length} 張照片 · ${album.id === 'dialogue' ? '點開座談紀錄' : '點開相簿'} ↗`;
     });
   });
   entries.forEach(button => button.addEventListener('click', async () => {

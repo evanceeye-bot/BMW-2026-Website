@@ -251,7 +251,92 @@
   {
     "id": "dialogue",
     "title": "員工座談會",
-    "description": "聽見彼此，讓我們一起往前走。",
-    "photos": []
+    "description": "讓交流被聽見，讓每一次相聚成為一起前進的起點。",
+    "photos": [
+      {
+        "src": "assets/images/memories/dialogue-01.webp",
+        "thumbnail": "assets/images/memories/dialogue-01-thumb.webp",
+        "caption": "台中梅亭 · 上午場",
+        "alt": "台中梅亭 · 上午場照片"
+      },
+      {
+        "src": "assets/images/memories/dialogue-02.webp",
+        "thumbnail": "assets/images/memories/dialogue-02-thumb.webp",
+        "caption": "台中梅亭 · 下午場",
+        "alt": "台中梅亭 · 下午場照片"
+      },
+      {
+        "src": "assets/images/memories/dialogue-03.webp",
+        "thumbnail": "assets/images/memories/dialogue-03-thumb.webp",
+        "caption": "四部 · 座談合照",
+        "alt": "四部 · 座談合照照片"
+      },
+      {
+        "src": "assets/images/memories/dialogue-04.webp",
+        "thumbnail": "assets/images/memories/dialogue-04-thumb.webp",
+        "caption": "四部 · 座談現場",
+        "alt": "四部 · 座談現場照片"
+      },
+      {
+        "src": "assets/images/memories/dialogue-05.webp",
+        "thumbnail": "assets/images/memories/dialogue-05-thumb.webp",
+        "caption": "四部 · 交流分享",
+        "alt": "四部 · 交流分享照片"
+      },
+      {
+        "src": "assets/images/memories/dialogue-06.webp",
+        "thumbnail": "assets/images/memories/dialogue-06-thumb.webp",
+        "caption": "五部 · 座談合照",
+        "alt": "五部 · 座談合照照片"
+      },
+      {
+        "src": "assets/images/memories/dialogue-07.webp",
+        "thumbnail": "assets/images/memories/dialogue-07-thumb.webp",
+        "caption": "十部 · 座談合照",
+        "alt": "十部 · 座談合照照片"
+      },
+      {
+        "src": "assets/images/memories/dialogue-08.webp",
+        "thumbnail": "assets/images/memories/dialogue-08-thumb.webp",
+        "caption": "十部 · 座談合照",
+        "alt": "十部 · 座談合照照片"
+      },
+      {
+        "src": "assets/images/memories/dialogue-09.webp",
+        "thumbnail": "assets/images/memories/dialogue-09-thumb.webp",
+        "caption": "台中 · 座談合照",
+        "alt": "台中 · 座談合照照片"
+      },
+      {
+        "src": "assets/images/memories/dialogue-10.webp",
+        "thumbnail": "assets/images/memories/dialogue-10-thumb.webp",
+        "caption": "台北 · 座談合照",
+        "alt": "台北 · 座談合照照片"
+      },
+      {
+        "src": "assets/images/memories/dialogue-11.webp",
+        "thumbnail": "assets/images/memories/dialogue-11-thumb.webp",
+        "caption": "座談現場合照",
+        "alt": "座談現場合照照片"
+      },
+      {
+        "src": "assets/images/memories/dialogue-12.webp",
+        "thumbnail": "assets/images/memories/dialogue-12-thumb.webp",
+        "caption": "板橋 · 座談合照",
+        "alt": "板橋 · 座談合照照片"
+      },
+      {
+        "src": "assets/images/memories/dialogue-13.webp",
+        "thumbnail": "assets/images/memories/dialogue-13-thumb.webp",
+        "caption": "高雄 · 座談合照",
+        "alt": "高雄 · 座談合照照片"
+      },
+      {
+        "src": "assets/images/memories/dialogue-14.webp",
+        "thumbnail": "assets/images/memories/dialogue-14-thumb.webp",
+        "caption": "座談現場合照",
+        "alt": "座談現場合照照片"
+      }
+    ]
   }
 ]
