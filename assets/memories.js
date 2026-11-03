@@ -24,6 +24,8 @@
   }
   function open(album, button) {
     stop(); current = album; index = 0; returnFocus = button;
+    dialog.dataset.theme = album.id;
+    select('.albumEyebrow').textContent = `PHOTO DIARY / ${String(entries.indexOf(button) + 1).padStart(2, '0')}`;
     select('#memoryAlbumTitle').textContent = album.title;
     select('#memoryAlbumDescription').textContent = album.description;
     thumbs.replaceChildren();
@@ -70,6 +72,45 @@
     if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) { stop(); show(index + (dx < 0 ? 1 : -1)); }
   }, {passive:true});
   document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); });
+
+  const rail = document.querySelector('#memories .polas');
+  const railPrev = document.querySelector('.albumRailPrev'), railNext = document.querySelector('.albumRailNext');
+  let drag = null, suppressClick = false;
+  const updateArrows = () => {
+    railPrev.disabled = rail.scrollLeft < 4;
+    railNext.disabled = rail.scrollLeft >= rail.scrollWidth - rail.clientWidth - 4;
+  };
+  const moveRail = direction => rail.scrollBy({left: direction * (entries[0].offsetWidth + parseFloat(getComputedStyle(rail).gap)), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+  railPrev.addEventListener('click', () => moveRail(-1));
+  railNext.addEventListener('click', () => moveRail(1));
+  rail.addEventListener('scroll', updateArrows, {passive:true});
+  window.addEventListener('resize', updateArrows);
+  rail.addEventListener('pointerdown', event => {
+    if (event.pointerType !== 'mouse' || event.button !== 0) return;
+    suppressClick = false; drag = {x:event.clientX, scroll:rail.scrollLeft, id:event.pointerId, moved:false};
+  });
+  rail.addEventListener('pointermove', event => {
+    if (!drag || event.pointerId !== drag.id) return;
+    const dx = event.clientX - drag.x;
+    if (Math.abs(dx) > 7 && !drag.moved) { drag.moved = true; rail.setPointerCapture(event.pointerId); rail.classList.add('isDragging'); }
+    if (drag.moved) { event.preventDefault(); rail.scrollLeft = drag.scroll - dx; }
+  });
+  function endDrag(event) {
+    if (!drag || event.pointerId !== drag.id) return;
+    suppressClick = drag.moved;
+    if (rail.hasPointerCapture(event.pointerId)) rail.releasePointerCapture(event.pointerId);
+    rail.classList.remove('isDragging'); drag = null;
+    if (suppressClick) {
+      const step = entries[0].offsetWidth + parseFloat(getComputedStyle(rail).gap);
+      rail.scrollTo({left:Math.round(rail.scrollLeft / step) * step, behavior:'smooth'});
+      setTimeout(() => { suppressClick = false; }, 0);
+    }
+  }
+  rail.addEventListener('pointerup', endDrag); rail.addEventListener('pointercancel', endDrag);
+  rail.addEventListener('pointerleave', event => { if (drag && !drag.moved) drag = null; });
+  rail.addEventListener('click', event => { if (suppressClick) {event.preventDefault();event.stopImmediatePropagation();} }, true);
+  updateArrows();
+
   const ready = fetch('assets/memories.json').then(response => { if (!response.ok) throw new Error('Album data unavailable'); return response.json(); }).then(data => {
     albums = data;
     entries.forEach(button => {
