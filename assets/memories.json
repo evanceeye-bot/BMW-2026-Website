@@ -1,0 +1,257 @@
+[
+  {
+    "id": "food",
+    "title": "好食光",
+    "description": "一起吃飯的時光，也是一起累積的回憶。",
+    "photos": [
+      {
+        "src": "assets/images/memories/food-08.webp",
+        "thumbnail": "assets/images/memories/food-08-thumb.webp",
+        "caption": "二部 · 感恩餐車餐會",
+        "alt": "二部 · 感恩餐車餐會活動照片"
+      },
+      {
+        "src": "assets/images/memories/food-09.webp",
+        "thumbnail": "assets/images/memories/food-09-thumb.webp",
+        "caption": "二部 · 感恩餐車餐會",
+        "alt": "二部 · 感恩餐車餐會活動照片"
+      },
+      {
+        "src": "assets/images/memories/food-10.webp",
+        "thumbnail": "assets/images/memories/food-10-thumb.webp",
+        "caption": "二部 · 感恩餐車餐會",
+        "alt": "二部 · 感恩餐車餐會活動照片"
+      },
+      {
+        "src": "assets/images/memories/food-02.webp",
+        "thumbnail": "assets/images/memories/food-02-thumb.webp",
+        "caption": "一部 · 慰勞餐車",
+        "alt": "一部 · 慰勞餐車活動照片"
+      },
+      {
+        "src": "assets/images/memories/food-03.webp",
+        "thumbnail": "assets/images/memories/food-03-thumb.webp",
+        "caption": "一部 · 慰勞餐車",
+        "alt": "一部 · 慰勞餐車活動照片"
+      },
+      {
+        "src": "assets/images/memories/food-04.webp",
+        "thumbnail": "assets/images/memories/food-04-thumb.webp",
+        "caption": "一部 · 慰勞餐車",
+        "alt": "一部 · 慰勞餐車活動照片"
+      },
+      {
+        "src": "assets/images/memories/food-01.webp",
+        "thumbnail": "assets/images/memories/food-01-thumb.webp",
+        "caption": "一部 · 共享食光",
+        "alt": "一部 · 共享食光活動照片"
+      },
+      {
+        "src": "assets/images/memories/food-11.webp",
+        "thumbnail": "assets/images/memories/food-11-thumb.webp",
+        "caption": "五部 · 團隊相聚",
+        "alt": "五部 · 團隊相聚活動照片"
+      },
+      {
+        "src": "assets/images/memories/food-12.webp",
+        "thumbnail": "assets/images/memories/food-12-thumb.webp",
+        "caption": "五部 · 團隊相聚",
+        "alt": "五部 · 團隊相聚活動照片"
+      },
+      {
+        "src": "assets/images/memories/food-15.webp",
+        "thumbnail": "assets/images/memories/food-15-thumb.webp",
+        "caption": "林粥宮聚餐",
+        "alt": "林粥宮聚餐活動照片"
+      },
+      {
+        "src": "assets/images/memories/food-07.webp",
+        "thumbnail": "assets/images/memories/food-07-thumb.webp",
+        "caption": "二部 · 感恩餐車餐會",
+        "alt": "二部 · 感恩餐車餐會活動照片"
+      },
+      {
+        "src": "assets/images/memories/food-batch2-13.webp",
+        "thumbnail": "assets/images/memories/food-batch2-13-thumb.webp",
+        "caption": "過年包福 · 一起包水餃",
+        "alt": "過年包福 · 一起包水餃照片"
+      },
+      {
+        "src": "assets/images/memories/food-batch2-06.webp",
+        "thumbnail": "assets/images/memories/food-batch2-06-thumb.webp",
+        "caption": "一起聚餐的時光",
+        "alt": "一起聚餐的時光照片"
+      },
+      {
+        "src": "assets/images/memories/food-batch2-08.webp",
+        "thumbnail": "assets/images/memories/food-batch2-08-thumb.webp",
+        "caption": "一起聚餐的時光",
+        "alt": "一起聚餐的時光照片"
+      }
+    ]
+  },
+  {
+    "id": "celebrate",
+    "title": "節慶同樂",
+    "description": "把節日的驚喜，收藏成我們的共同回憶。",
+    "photos": [
+      {
+        "src": "assets/images/memories/celebrate-06.webp",
+        "thumbnail": "assets/images/memories/celebrate-06-thumb.webp",
+        "caption": "九部 · 同仁手作月餅",
+        "alt": "九部 · 同仁手作月餅活動照片"
+      },
+      {
+        "src": "assets/images/memories/celebrate-05.webp",
+        "thumbnail": "assets/images/memories/celebrate-05-thumb.webp",
+        "caption": "九部 · 中秋活動",
+        "alt": "九部 · 中秋活動活動照片"
+      },
+      {
+        "src": "assets/images/memories/celebrate-16.webp",
+        "thumbnail": "assets/images/memories/celebrate-16-thumb.webp",
+        "caption": "母親節活動",
+        "alt": "母親節活動活動照片"
+      },
+      {
+        "src": "assets/images/memories/celebrate-batch2-12.webp",
+        "thumbnail": "assets/images/memories/celebrate-batch2-12-thumb.webp",
+        "caption": "2025 聖誕活動 · 交換禮物",
+        "alt": "2025 聖誕活動 · 交換禮物照片"
+      },
+      {
+        "src": "assets/images/memories/celebrate-batch2-11.webp",
+        "thumbnail": "assets/images/memories/celebrate-batch2-11-thumb.webp",
+        "caption": "2025 聖誕活動",
+        "alt": "2025 聖誕活動照片"
+      },
+      {
+        "src": "assets/images/memories/celebrate-batch2-18.webp",
+        "thumbnail": "assets/images/memories/celebrate-batch2-18-thumb.webp",
+        "caption": "聖誕活動花絮",
+        "alt": "聖誕活動花絮照片"
+      },
+      {
+        "src": "assets/images/memories/celebrate-batch2-17.webp",
+        "thumbnail": "assets/images/memories/celebrate-batch2-17-thumb.webp",
+        "caption": "聖誕活動花絮",
+        "alt": "聖誕活動花絮照片"
+      },
+      {
+        "src": "assets/images/memories/celebrate-batch2-15.webp",
+        "thumbnail": "assets/images/memories/celebrate-batch2-15-thumb.webp",
+        "caption": "聖誕同樂合照",
+        "alt": "聖誕同樂合照照片"
+      },
+      {
+        "src": "assets/images/memories/celebrate-batch2-07.webp",
+        "thumbnail": "assets/images/memories/celebrate-batch2-07-thumb.webp",
+        "caption": "節慶同樂",
+        "alt": "節慶同樂照片"
+      },
+      {
+        "src": "assets/images/memories/celebrate-batch2-01.webp",
+        "thumbnail": "assets/images/memories/celebrate-batch2-01-thumb.webp",
+        "caption": "三部 · 活動合照",
+        "alt": "三部 · 活動合照照片"
+      },
+      {
+        "src": "assets/images/memories/celebrate-batch2-02.webp",
+        "thumbnail": "assets/images/memories/celebrate-batch2-02-thumb.webp",
+        "caption": "三部 · 花束傳心意",
+        "alt": "三部 · 花束傳心意照片"
+      },
+      {
+        "src": "assets/images/memories/celebrate-batch2-03.webp",
+        "thumbnail": "assets/images/memories/celebrate-batch2-03-thumb.webp",
+        "caption": "三部 · 節慶分享",
+        "alt": "三部 · 節慶分享照片"
+      },
+      {
+        "src": "assets/images/memories/celebrate-batch2-04.webp",
+        "thumbnail": "assets/images/memories/celebrate-batch2-04-thumb.webp",
+        "caption": "三部 · 節慶分享",
+        "alt": "三部 · 節慶分享照片"
+      },
+      {
+        "src": "assets/images/memories/celebrate-batch2-05.webp",
+        "thumbnail": "assets/images/memories/celebrate-batch2-05-thumb.webp",
+        "caption": "三部 · 節慶分享",
+        "alt": "三部 · 節慶分享照片"
+      },
+      {
+        "src": "assets/images/memories/celebrate-batch2-10.webp",
+        "thumbnail": "assets/images/memories/celebrate-batch2-10-thumb.webp",
+        "caption": "小禮物，大心意",
+        "alt": "小禮物，大心意照片"
+      }
+    ]
+  },
+  {
+    "id": "together",
+    "title": "我們在一起",
+    "description": "平凡的日常，因為有彼此而值得記住。",
+    "photos": [
+      {
+        "src": "assets/images/memories/together-13.webp",
+        "thumbnail": "assets/images/memories/together-13-thumb.webp",
+        "caption": "五部 · 團隊合照",
+        "alt": "五部 · 團隊合照活動照片"
+      },
+      {
+        "src": "assets/images/memories/together-17.webp",
+        "thumbnail": "assets/images/memories/together-17-thumb.webp",
+        "caption": "激勵活動",
+        "alt": "激勵活動活動照片"
+      },
+      {
+        "src": "assets/images/memories/together-18.webp",
+        "thumbnail": "assets/images/memories/together-18-thumb.webp",
+        "caption": "部主管歡送",
+        "alt": "部主管歡送活動照片"
+      },
+      {
+        "src": "assets/images/memories/together-14.webp",
+        "thumbnail": "assets/images/memories/together-14-thumb.webp",
+        "caption": "五部 · 團隊合照",
+        "alt": "五部 · 團隊合照活動照片"
+      },
+      {
+        "src": "assets/images/memories/together-batch2-14.webp",
+        "thumbnail": "assets/images/memories/together-batch2-14-thumb.webp",
+        "caption": "節能案 · 加班激勵活動",
+        "alt": "節能案 · 加班激勵活動照片"
+      },
+      {
+        "src": "assets/images/memories/together-batch2-09.webp",
+        "thumbnail": "assets/images/memories/together-batch2-09-thumb.webp",
+        "caption": "團隊活動合照",
+        "alt": "團隊活動合照照片"
+      },
+      {
+        "src": "assets/images/memories/together-batch2-16.webp",
+        "thumbnail": "assets/images/memories/together-batch2-16-thumb.webp",
+        "caption": "團隊活動合照",
+        "alt": "團隊活動合照照片"
+      }
+    ]
+  },
+  {
+    "id": "esg",
+    "title": "ESG 活動",
+    "description": "讓每一次行動，都留下更好的風景。",
+    "photos": []
+  },
+  {
+    "id": "learning",
+    "title": "訓練課程",
+    "description": "一起學習，把成長帶進下一段旅程。",
+    "photos": []
+  },
+  {
+    "id": "dialogue",
+    "title": "員工座談會",
+    "description": "聽見彼此，讓我們一起往前走。",
+    "photos": []
+  }
+]
