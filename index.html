@@ -558,7 +558,7 @@ const overlay=document.getElementById('detail'), body=document.getElementById('d
 document.querySelectorAll('.story').forEach(btn=>btn.addEventListener('click',()=>{
   const id=btn.dataset.story;
   if(id==='06'){window.BMWGuestbook.open();return;}
-  const videos={'01':'V5fk-pWAzGE','04':'q_mv9m6hLPk','05':'v-CJ2E_z6zA'};
+  const videos={'01':'V5fk-pWAzGE','02':'F7dmWf5r_8Q','04':'q_mv9m6hLPk','05':'v-CJ2E_z6zA'};
   const videoId=videos[id];
   body.innerHTML=videoId ? `<div class="storyVideoWrap"><iframe class="storyVideo" src="https://www.youtube.com/embed/${videoId}?autoplay=1&amp;playsinline=1&amp;rel=0" title="第 ${id} 站影片" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="storyVideoHelp">若未自動播放，請按播放器的播放鍵。亦可<a href="https://youtu.be/${videoId}" target="_blank" rel="noopener noreferrer">在 YouTube 觀看</a>。</p></div>` : data[id];
   overlay.classList.add('open'); document.body.style.overflow='hidden';
