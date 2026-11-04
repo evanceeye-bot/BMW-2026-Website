@@ -347,6 +347,7 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 @media(max-width:420px){#journey .flight .ticketValue{font-size:23px}}
 </style>
 <link rel="stylesheet" href="assets/last-page.css?v=6">
+<link rel="stylesheet" href="assets/bgm.css?v=1">
 </head>
 <body>
 <nav class="nav"><div class="brand">ON THE <span>WAY</span></div><div class="navlinks">
@@ -662,6 +663,9 @@ function runFlap(){
 })();
 </script>
 <a class="demoBadge" href="#top" aria-label="網站導覽：回到頁首">網站導覽 ↑</a>
+<audio id="siteBgm" src="assets/audio/2026-bmw.mp3" preload="none" loop hidden></audio>
+<button class="bgmToggle" type="button" aria-controls="siteBgm" aria-pressed="false" disabled><span class="bgmIcon" aria-hidden="true"><i></i><i></i><i></i></span><span class="bgmLabel">播放旅程音樂</span></button>
+<span class="bgmStatus" role="status" aria-live="polite"></span>
 <dialog id="memoryAlbum" class="memoryAlbum" aria-labelledby="memoryAlbumTitle">
 <div class="albumHead"><div><p class="albumEyebrow">OUR PHOTO DIARY</p><h2 id="memoryAlbumTitle"></h2><p id="memoryAlbumDescription"></p></div><button type="button" class="albumClose" aria-label="關閉相簿">×</button></div>
 <div class="albumStage"><div class="albumBackdrop" aria-hidden="true"></div><img class="albumMainImage" alt=""><p class="albumEmpty">活動照片整理中，敬請期待。</p><button type="button" class="albumPrev" aria-label="上一張照片">‹</button><button type="button" class="albumNext" aria-label="下一張照片">›</button></div>
@@ -670,4 +674,5 @@ function runFlap(){
 <script src="assets/reviews.js?v=2" defer></script>
 <script src="assets/guestbook.js?v=2" defer></script>
 <script src="assets/last-page.js?v=4" defer></script>
+<script src="assets/bgm.js?v=1" defer></script>
 </body></html>

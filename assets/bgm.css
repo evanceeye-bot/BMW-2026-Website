@@ -1,0 +1,8 @@
+.bgmToggle{position:fixed;left:22px;bottom:max(22px,env(safe-area-inset-bottom));z-index:80;display:flex;align-items:center;gap:9px;min-height:44px;padding:10px 15px;border:1px solid #ffffff40;border-radius:999px;background:#12354bea;color:#fffdf5;box-shadow:0 8px 26px #102d4924;backdrop-filter:blur(12px);font:500 12px/1.5 "Noto Sans TC",sans-serif;letter-spacing:.03em;cursor:pointer;touch-action:manipulation}
+.bgmToggle:hover{background:#1b4962}.bgmToggle:focus-visible{outline:3px solid #e9bc60;outline-offset:4px}.bgmToggle:disabled{opacity:.5;cursor:default}
+.bgmIcon{display:flex;align-items:center;justify-content:center;gap:3px;width:20px;height:20px;color:#f4d087}.bgmIcon i{display:block;width:3px;height:5px;background:currentColor;border-radius:2px}
+.bgmToggle[data-state="playing"] .bgmIcon i{animation:bgmWave 1s ease-in-out infinite alternate}.bgmIcon i:nth-child(2){animation-delay:-.4s!important;height:12px}.bgmIcon i:nth-child(3){animation-delay:-.7s!important;height:8px}
+.bgmStatus{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@keyframes bgmWave{from{transform:scaleY(.45)}to{transform:scaleY(1.15)}}
+@media(max-width:640px){.bgmToggle{left:14px;bottom:max(22px,env(safe-area-inset-bottom));padding:10px 12px;font-size:11px;gap:7px}}
+@media(prefers-reduced-motion:reduce){.bgmToggle .bgmIcon i{animation:none!important}}
