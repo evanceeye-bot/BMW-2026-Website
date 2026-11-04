@@ -346,7 +346,7 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 }
 @media(max-width:420px){#journey .flight .ticketValue{font-size:23px}}
 </style>
-<link rel="stylesheet" href="assets/last-page.css?v=1">
+<link rel="stylesheet" href="assets/last-page.css?v=2">
 </head>
 <body>
 <nav class="nav"><div class="brand">ON THE <span>WAY</span></div><div class="navlinks">
@@ -439,14 +439,16 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
           <span class="lastPageEnvelopeArt" aria-hidden="true">
             <span class="lastPageEnvelopeBack"></span>
             <span class="lastPageLetter"><span class="lastPageLetterMark">BMW 2026</span><span class="lastPageLetterLines"></span></span>
-            <svg class="lastPageEnvelopeFront" viewBox="0 0 320 206" fill="none"><path d="M0 0L160 105L320 0V198Q320 206 312 206H8Q0 206 0 198Z" fill="#dbc39d"/><path d="M0 0L160 105L0 198Z" fill="#e5d1af"/><path d="M320 0L160 105L320 198Z" fill="#ddc6a1"/><path d="M0 200L160 89L320 200Q320 206 312 206H8Q0 206 0 200Z" fill="#ead7b6"/><path d="M0 200L160 89L320 200" stroke="#b9a17c" stroke-opacity=".35" stroke-width="1"/></svg>
-            <span class="lastPageFlap"><svg viewBox="0 0 320 112" preserveAspectRatio="none"><path d="M0 0H320L168 109Q160 115 152 109Z" fill="#e8d3af"/><path d="M1 1L152 109Q160 115 168 109L319 1" stroke="#bba17a" stroke-opacity=".45" fill="none"/></svg></span>
+            <svg class="lastPageEnvelopeFront" viewBox="0 0 320 206" fill="none"><defs><linearGradient id="lastPageFrontPaper" x1="160" y1="100" x2="160" y2="206" gradientUnits="userSpaceOnUse"><stop stop-color="#ede3cd"/><stop offset="1" stop-color="#dac8a7"/></linearGradient><linearGradient id="lastPageLeftPaper" x1="0" y1="90" x2="166" y2="130" gradientUnits="userSpaceOnUse"><stop stop-color="#e7dac0"/><stop offset="1" stop-color="#cfbc98"/></linearGradient><linearGradient id="lastPageRightPaper" x1="320" y1="90" x2="154" y2="130" gradientUnits="userSpaceOnUse"><stop stop-color="#e5d6b9"/><stop offset="1" stop-color="#c8b38e"/></linearGradient></defs><path d="M0 0L160 105L320 0V202Q320 206 316 206H4Q0 206 0 202Z" fill="#c7b28c"/><path d="M0 0L160 105L0 204Z" fill="url(#lastPageLeftPaper)"/><path d="M320 0L160 105L320 204Z" fill="url(#lastPageRightPaper)"/><path d="M0 202L156 100Q160 97 164 100L320 202Q320 206 316 206H4Q0 206 0 202Z" fill="url(#lastPageFrontPaper)"/><path d="M1 201L156 100Q160 97 164 100L319 201" stroke="#a48c62" stroke-opacity=".24" stroke-width=".8"/><path d="M2 203L157 102Q160 100 163 102L318 203" stroke="#fffcf3" stroke-opacity=".5" stroke-width=".6"/><path d="M4 205H316" stroke="#a7916a" stroke-opacity=".25"/></svg>
+            <span class="lastPageFlap"><svg viewBox="0 0 320 112" preserveAspectRatio="none"><defs><linearGradient id="lastPageFlapPaper" x1="160" y1="0" x2="160" y2="112" gradientUnits="userSpaceOnUse"><stop stop-color="#efe6d2"/><stop offset=".7" stop-color="#e6d7b9"/><stop offset="1" stop-color="#d5c19b"/></linearGradient></defs><path d="M0 0H320L167 108Q160 113 153 108Z" fill="url(#lastPageFlapPaper)"/><path d="M1 1L153 108Q160 113 167 108L319 1" stroke="#ac946b" stroke-opacity=".35" stroke-width=".7" fill="none"/><path d="M2 1H318" stroke="#fffdf6" stroke-opacity=".8" stroke-width="1.2"/></svg></span>
+            <span class="lastPageEnvelopeInscription">To our next chapter.</span>
             <span class="lastPageSeal"><svg viewBox="0 0 32 32" fill="none"><path d="M27 6L20 26L15 18L7 13L27 6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M15 18L27 6M15 18L14 25L19 22" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
           </span>
         </button>
         <div class="lastPageReveal" id="lastPageReveal" role="region" aria-labelledby="lastPageMessageTitle" hidden></div>
       </div>
       <p class="lastPageHint">點開它，看看旅程最後留下了什麼。</p>
+      <div class="lastPageColophon" aria-hidden="true"><span>Our Journey, Our Story</span><span>BMW 2026</span></div>
       <p class="lastPageStatus" role="status" aria-live="polite"></p>
       <noscript><p class="lastPageNoScript">請啟用 JavaScript，開啟旅程最後一封信。</p></noscript>
     </div>
