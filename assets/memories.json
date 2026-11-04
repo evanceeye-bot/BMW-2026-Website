@@ -254,6 +254,12 @@
     "description": "一起聊聊、一起笑，把每一次相聚收藏成我們的回憶。",
     "photos": [
       {
+        "src": "assets/images/memories/dialogue-update-20261104.webp",
+        "thumbnail": "assets/images/memories/dialogue-update-20261104-thumb.webp",
+        "caption": "",
+        "alt": "員工座談會團體合照"
+      },
+      {
         "src": "assets/images/memories/dialogue-new-01.webp",
         "thumbnail": "assets/images/memories/dialogue-new-01-thumb.webp",
         "caption": "",
