@@ -1,0 +1,57 @@
+/* All styles are scoped to the final page; timings mirror last-page.js (2400 ms). */
+#next{padding-top:48px;padding-bottom:100px;scroll-margin-top:86px}
+#next .lastPageCard{position:relative;isolation:isolate;padding:54px 36px 34px;overflow:hidden;border-radius:22px;background-color:#f9f5eb;background-image:radial-gradient(#c7b99e24 .7px,transparent .7px),linear-gradient(125deg,#fffdf7,#f5efdf);background-size:7px 7px,100% 100%;box-shadow:0 18px 48px #18374b0d}
+#next .lastPageCard:before{content:"";position:absolute;inset:18px;border:1px solid #c9bba22b;border-radius:13px;pointer-events:none;z-index:-1}
+#next .lastPageHeading{text-align:center;position:relative;z-index:1}
+#next .lastPageKicker{margin:0 0 14px;font:700 11px/1.7 "DM Sans",sans-serif;letter-spacing:.2em;color:#8b9ca5}
+#next h2{margin:0;color:#17384f;font:700 clamp(28px,3.3vw,46px)/1.5 "Noto Serif TC",serif;text-wrap:balance}
+#next .lastPageStage{position:relative;display:grid;min-height:430px;width:min(720px,100%);margin:18px auto 0;perspective:1100px}
+#next .lastPageEnvelope{position:absolute;left:50%;bottom:40px;width:320px;max-width:calc(100% - 24px);aspect-ratio:320/206;transform:translateX(-50%);padding:0;border:0;background:transparent;border-radius:7px;cursor:pointer!important;-webkit-tap-highlight-color:transparent;touch-action:manipulation;z-index:2}
+#next .lastPageEnvelope:disabled{cursor:default!important}
+#next .lastPageEnvelope:focus-visible{outline:3px solid #386885;outline-offset:14px}
+#next .lastPageEnvelopeArt{position:absolute;inset:0;display:block;filter:drop-shadow(0 14px 13px #72593627);transition:transform .3s ease,filter .3s ease;transform-style:preserve-3d}
+#next .lastPageEnvelopeBack{position:absolute;inset:0;border-radius:7px;background:linear-gradient(150deg,#c8af88,#d7c09a);box-shadow:inset 0 0 0 1px #b69e7933}
+#next .lastPageEnvelopeFront{position:absolute;inset:0;width:100%;height:100%;z-index:4;filter:drop-shadow(0 -1px 0 #b69e7914)}
+#next .lastPageFlap{position:absolute;top:0;left:0;width:100%;height:54.4%;z-index:6;transform-origin:50% 0;backface-visibility:visible;transform:rotateX(0)}
+#next .lastPageFlap svg{display:block;width:100%;height:100%;filter:drop-shadow(0 2px 1px #785f4226)}
+#next .lastPageSeal{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:54px;height:54px;display:grid;place-items:center;border-radius:50%;color:#eed3b3;background:radial-gradient(circle at 34% 28%,#ae6552,#8d453a 74%);border:3px solid #a05a49;box-shadow:0 3px 6px #52302536,inset 0 0 0 1px #c4856b80;z-index:8;transition:scale .3s ease}
+#next .lastPageSeal svg{width:29px;height:29px;transform:rotate(-9deg)}
+#next .lastPageLetter{position:absolute;left:6%;bottom:5%;width:88%;height:86%;background:#fffdf6;border:1px solid #e6dcc6;box-shadow:0 3px 12px #5e4b2a12;z-index:2;opacity:0;transform-origin:bottom;display:block;padding:22px 20px}
+#next .lastPageLetterMark{font:700 8px/1.7 "DM Sans",sans-serif;letter-spacing:.18em;color:#93a0a3}
+#next .lastPageLetterLines{display:block;height:56px;margin-top:20px;background:repeating-linear-gradient(180deg,transparent 0 17px,#e0d8c74d 17px 18px)}
+#next .lastPageReveal{position:relative;z-index:5;align-self:start;width:min(620px,100%);margin:12px auto 100px;outline:none}
+#next .lastPageReveal[hidden]{display:none}
+#next .lastPageMessage{padding:48px 32px 44px;background:#fffdf7;border-radius:3px;border:1px solid #e3d9c5;box-shadow:0 12px 32px #65513314;text-align:center;background-image:linear-gradient(90deg,transparent 0 19px,#c4ac8640 19px 20px,transparent 20px)}
+#next .lastPageMessageKicker{font:700 10px/1.8 "DM Sans",sans-serif;letter-spacing:.18em;color:#9b8c74;margin:0 0 18px}
+#next .lastPageMessage h3{font:700 clamp(25px,3vw,38px)/1.5 "Noto Serif TC",serif;color:#18384c;margin:0 0 16px;text-wrap:balance;outline:none}
+#next .lastPageMessageBody{font:400 16px/1.9 "Noto Sans TC",sans-serif;color:#72818a}
+#next .lastPageMessageBody p{margin:0;text-wrap:pretty}
+#next .lastPageReveal img,#next .lastPageReveal video,#next .lastPageReveal iframe{display:block;max-width:100%;width:100%;height:auto;border:0}
+#next .lastPageReveal iframe{aspect-ratio:16/9}
+#next .lastPageHint{margin:8px 0 0;text-align:center;font-size:14px;line-height:1.9;color:#82939b;letter-spacing:.03em}
+#next .lastPageStatus{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#next .lastPageNoScript{font-size:13px;line-height:1.8;text-align:center;color:#72818a}
+@media(hover:hover) and (pointer:fine){#next[data-state="sealed"] .lastPageEnvelope:hover .lastPageEnvelopeArt{transform:translateY(-5px);filter:drop-shadow(0 20px 16px #72593638)}#next[data-state="sealed"] .lastPageEnvelope:hover .lastPageSeal{scale:1.04}}
+/* Initial reveal runs once when the page enters view, never opens the envelope. */
+#next.isReady:not(.isVisible) .lastPageCard{opacity:0}
+#next.isVisible .lastPageCard{animation:lastPageAppear .8s ease both}
+#next.isVisible .lastPageHeading{animation:lastPageAppear .7s .12s ease both}
+#next.isVisible[data-state="sealed"] .lastPageEnvelopeArt{animation:lastPageFloatIn .85s .2s ease backwards}
+#next.isVisible .lastPageHint{animation:lastPageAppear .7s .4s ease both}
+#next[data-state="opening"] .lastPageSeal,#next[data-state="opened"] .lastPageSeal{animation:lastPageUnseal .32s ease forwards}
+#next[data-state="opening"] .lastPageFlap,#next[data-state="opened"] .lastPageFlap{animation:lastPageOpenFlap .65s .25s ease forwards}
+#next[data-state="opening"] .lastPageLetter{animation:lastPageExtract .95s .85s cubic-bezier(.22,.7,.3,1) both}
+#next[data-state="opened"] .lastPageFlap{animation:none;transform:rotateX(180deg);z-index:1}
+#next[data-state="opened"] .lastPageSeal{animation:none;opacity:0}
+#next[data-state="opened"] .lastPageLetter{opacity:0}
+#next[data-state="opened"] .lastPageEnvelopeArt{transform:translateY(22px) scale(.92);filter:drop-shadow(0 9px 10px #7259361f);transition:transform .55s ease}
+#next[data-state="opened"] .lastPageReveal{animation:lastPageReveal .5s ease both}
+#next[data-state="opened"] .lastPageHint{visibility:hidden}
+@keyframes lastPageAppear{from{opacity:0}to{opacity:1}}
+@keyframes lastPageFloatIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes lastPageUnseal{to{opacity:0;transform:translate(-50%,-50%) scale(.84)}}
+@keyframes lastPageOpenFlap{0%{transform:rotateX(0);z-index:6}65%{z-index:6}100%{transform:rotateX(180deg);z-index:1}}
+@keyframes lastPageExtract{0%{opacity:0;transform:translateY(0) scaleY(.82)}15%{opacity:1}100%{opacity:1;transform:translateY(-84%) scaleY(1.08)}}
+@keyframes lastPageReveal{from{opacity:0;transform:translateY(10px) scaleY(.96)}to{opacity:1;transform:translateY(0) scaleY(1)}}
+@media(max-width:640px){#next{padding-top:32px;padding-bottom:72px}#next .lastPageCard{padding:38px 20px 28px;border-radius:18px}#next .lastPageCard:before{inset:12px;border-radius:10px}#next .lastPageKicker{font-size:9px;letter-spacing:.14em}#next h2{font-size:clamp(25px,6.4vw,34px);line-height:1.6}#next .lastPageStage{min-height:390px;margin-top:10px}#next .lastPageEnvelope{width:280px;bottom:35px;max-width:calc(100% - 12px)}#next .lastPageSeal{width:46px;height:46px}#next .lastPageSeal svg{width:25px;height:25px}#next .lastPageMessage{padding:36px 18px 32px;background-image:none}#next .lastPageMessageKicker{font-size:9px;letter-spacing:.12em}#next .lastPageMessage h3{font-size:clamp(23px,6vw,30px)}#next .lastPageMessageBody{font-size:14px;line-height:1.9}#next .lastPageHint{font-size:12px;letter-spacing:0}#next .lastPageReveal{margin-bottom:90px}}
+@media(prefers-reduced-motion:reduce){#next *,#next *:before,#next *:after{animation:none!important;transition:none!important}#next.isReady .lastPageCard{opacity:1}}

@@ -238,17 +238,6 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 #stories .story:focus-visible{outline:3px solid #1167a8;outline-offset:4px;border-radius:20px}
 </style>
 
-<style id="next-six-covers">
-#next .nextGrid{grid-template-columns:repeat(6,minmax(0,1fr))}
-#next .nextGrid img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;border-radius:0}
-#next .mini img{filter:grayscale(1) brightness(.65)}
-#next .locked img{filter:none}
-#next .locked button{aspect-ratio:1/1}
-#next .locked .lockIcon{background:#16364bf2;border-color:#fff;color:#ffd12e;box-shadow:0 4px 16px #0008}
-#next .locked button:focus-visible{outline:3px solid #1167a8;outline-offset:3px;border-radius:12px}
-@media(max-width:980px){#next .nextGrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:640px){#next .nextGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-</style>
 <link rel="stylesheet" href="assets/memories.css?v=5">
 
 <style id="mobile-navigation">
@@ -357,6 +346,7 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 }
 @media(max-width:420px){#journey .flight .ticketValue{font-size:23px}}
 </style>
+<link rel="stylesheet" href="assets/last-page.css?v=1">
 </head>
 <body>
 <nav class="nav"><div class="brand">ON THE <span>WAY</span></div><div class="navlinks">
@@ -437,14 +427,44 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 
 <section class="section memory" id="memories"><div class="shell"><div class="kicker">TRAVEL MEMORIES</div><h2>走過的風景，都是我們的里程。</h2><p class="lede">每一次並肩出發、每一個爆笑瞬間，都會變成下一段旅程的養分。</p><div class="albumRailToolbar"><p>左右拖曳，翻閱六本旅程相簿</p><div><button type="button" class="albumRailPrev" aria-label="往前查看相簿">←</button><button type="button" class="albumRailNext" aria-label="往後查看相簿">→</button></div></div><div class="polas" aria-label="六本旅程相簿"><button type="button" class="pola albumEntry" data-album="food" aria-haspopup="dialog" aria-controls="memoryAlbum"><img src="assets/images/memories/food-07.webp" alt="二部 · 感恩餐車餐會活動照片" loading="lazy"><b>好食光</b><span class="albumEntryNote">14 張照片 · 點開相簿 ↗</span></button><button type="button" class="pola albumEntry" data-album="celebrate" aria-haspopup="dialog" aria-controls="memoryAlbum"><img src="assets/images/memories/celebrate-05.webp" alt="九部 · 中秋活動活動照片" loading="lazy"><b>節慶同樂</b><span class="albumEntryNote">15 張照片 · 點開相簿 ↗</span></button><button type="button" class="pola albumEntry" data-album="together" aria-haspopup="dialog" aria-controls="memoryAlbum"><img src="assets/images/memories/together-14.webp" alt="五部 · 團隊合照活動照片" loading="lazy"><b>我們在一起</b><span class="albumEntryNote">7 張照片 · 點開相簿 ↗</span></button><button type="button" class="pola albumEntry" data-album="esg" aria-haspopup="dialog" aria-controls="memoryAlbum"><img src="assets/images/photo-02-9f0b3660.png" alt="" loading="lazy"><b>ESG 活動</b><span class="albumEntryNote">照片待補 · 查看相簿 ↗</span></button><button type="button" class="pola albumEntry" data-album="learning" aria-haspopup="dialog" aria-controls="memoryAlbum"><img src="assets/images/photo-09-5004dbf9.png" alt="" loading="lazy"><b>訓練課程</b><span class="albumEntryNote">照片待補 · 查看相簿 ↗</span></button><button type="button" class="pola albumEntry" data-album="dialogue" aria-haspopup="dialog" aria-controls="memoryAlbum"><img src="assets/images/memories/dialogue-new-02.webp" alt="四部員工座談會合照" loading="lazy"><b>員工座談會</b><span class="albumEntryNote">11 張照片 · 點開相簿 ↗</span></button></div><p class="albumCoverNote">已收錄 36 張活動照片與 11 張員工座談會照片；ESG 活動及訓練課程照片待補，封面暫為旅行示意圖。</p></div></section>
 
-<section class="section nextSec" id="next"><div class="shell"><div class="kicker">NEXT STOP...</div><h2>下一站，還有一段風景等著我們一起打開。</h2><p class="lede">前面的路已經走成故事；最後一站暫時留白，等真正走到那裡，再一起揭開。</p>
-<div class="nextGrid"><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-unified-01.jpg" alt="出發吧！旅行模式 ON" width="1254" height="1254" loading="lazy"><b>出發吧！旅行模式 ON</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-unified-02.jpg" alt="行李箱裡，藏著什麼秘密？" width="1254" height="1254" loading="lazy"><b>行李箱裡，藏著什麼秘密？</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-unified-03.jpg" alt="空中限定！本期必看" width="1254" height="1254" loading="lazy"><b>空中限定！本期必看</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-unified-04.jpg" alt="旅行開外掛！私藏路線大公開" width="1254" height="1254" loading="lazy"><b>旅行開外掛！私藏路線大公開</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-unified-05.jpg" alt="一生至少一次！夢幻體驗清單" width="1254" height="1254" loading="lazy"><b>一生至少一次！夢幻體驗清單</b></div><div class="locked" id="locked"><img src="assets/images/story-unified-06.jpg" alt="短髮男生在咖啡桌邊寫明信片，下一站祝福" width="1254" height="1254" loading="lazy"><button id="unlockBtn" aria-label="解鎖第六站，開啟下一站驚喜"><span class="lockIcon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M10 14V9a6 6 0 0 1 12 0v5" stroke="currentColor" stroke-width="3"/><rect x="5" y="13" width="22" height="17" rx="4" fill="currentColor"/><path d="M16 20v4" stroke="#16364b" stroke-width="3" stroke-linecap="round"/></svg></span></button><b>下一站，祝福</b></div></div></div></section>
+<section class="section nextSec" id="next" aria-labelledby="lastPageTitle" data-last-page data-state="sealed">
+  <div class="shell">
+    <div class="lastPageCard">
+      <header class="lastPageHeading">
+        <p class="lastPageKicker">BMW 2026 · THE LAST PAGE</p>
+        <h2 id="lastPageTitle">有些精彩，值得留到最後。</h2>
+      </header>
+      <div class="lastPageStage">
+        <button class="lastPageEnvelope" type="button" aria-label="拆開旅程最後一封信" aria-controls="lastPageReveal" aria-expanded="false" disabled>
+          <span class="lastPageEnvelopeArt" aria-hidden="true">
+            <span class="lastPageEnvelopeBack"></span>
+            <span class="lastPageLetter"><span class="lastPageLetterMark">BMW 2026</span><span class="lastPageLetterLines"></span></span>
+            <svg class="lastPageEnvelopeFront" viewBox="0 0 320 206" fill="none"><path d="M0 0L160 105L320 0V198Q320 206 312 206H8Q0 206 0 198Z" fill="#dbc39d"/><path d="M0 0L160 105L0 198Z" fill="#e5d1af"/><path d="M320 0L160 105L320 198Z" fill="#ddc6a1"/><path d="M0 200L160 89L320 200Q320 206 312 206H8Q0 206 0 200Z" fill="#ead7b6"/><path d="M0 200L160 89L320 200" stroke="#b9a17c" stroke-opacity=".35" stroke-width="1"/></svg>
+            <span class="lastPageFlap"><svg viewBox="0 0 320 112" preserveAspectRatio="none"><path d="M0 0H320L168 109Q160 115 152 109Z" fill="#e8d3af"/><path d="M1 1L152 109Q160 115 168 109L319 1" stroke="#bba17a" stroke-opacity=".45" fill="none"/></svg></span>
+            <span class="lastPageSeal"><svg viewBox="0 0 32 32" fill="none"><path d="M27 6L20 26L15 18L7 13L27 6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M15 18L27 6M15 18L14 25L19 22" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+          </span>
+        </button>
+        <div class="lastPageReveal" id="lastPageReveal" role="region" aria-labelledby="lastPageMessageTitle" hidden></div>
+      </div>
+      <p class="lastPageHint">點開它，看看旅程最後留下了什麼。</p>
+      <p class="lastPageStatus" role="status" aria-live="polite"></p>
+      <noscript><p class="lastPageNoScript">請啟用 JavaScript，開啟旅程最後一封信。</p></noscript>
+    </div>
+  </div>
+  <!-- Replace this template to change the revealed content; the envelope animation is independent. -->
+  <template id="lastPageContent">
+    <div class="lastPageMessage">
+      <p class="lastPageMessageKicker">A LITTLE SOMETHING FOR YOU</p>
+      <h3 id="lastPageMessageTitle" tabindex="-1">故事，還有下一頁。</h3>
+      <div class="lastPageMessageBody"><p>這趟旅程的最後一個驚喜，正準備展開。</p></div>
+    </div>
+  </template>
+</section>
 
 <div class="overlay" id="detail">
 <div class="panel"><button class="close" id="closeDetail">×</button><div id="detailBody"></div></div>
 </div>
 
-<div class="finalOverlay" id="finalOverlay"><button class="finalClose" id="finalClose">×</button><img src="assets/images/photo-10-7f41fbdb.png" alt="2027 HERE WE COME"></div>
 
 <script>
 const data = {
@@ -551,12 +571,6 @@ function runFlap(){
  const cells=[...document.querySelectorAll('.flapCell.msg')];
  let i=0; const step=()=>{if(i<msgs.length){cells[i].textContent=msgs[i];beep(520+i*80,.07);i++;setTimeout(step,430-i*40)}else{const a=document.getElementById('flapAlert');if(a)a.classList.add('show');beep(240,.16)}};setTimeout(step,300);
 }
-const lock=document.getElementById('locked'), final=document.getElementById('finalOverlay');
-document.getElementById('unlockBtn').onclick=()=>{
- lock.classList.add('unlocking'); beep(920,.09);
- setTimeout(()=>{final.classList.add('open');document.body.style.overflow='hidden';},650);
-};
-document.getElementById('finalClose').onclick=()=>{final.classList.remove('open');document.body.style.overflow='';lock.classList.remove('unlocking');};
 
 
 // Keep the full text available to assistive technology while animating visual copies.
@@ -654,4 +668,5 @@ document.getElementById('finalClose').onclick=()=>{final.classList.remove('open'
 </dialog><script src="assets/memories.js?v=5" defer></script>
 <script src="assets/reviews.js?v=2" defer></script>
 <script src="assets/guestbook.js?v=2" defer></script>
+<script src="assets/last-page.js?v=1" defer></script>
 </body></html>
