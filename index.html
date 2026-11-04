@@ -293,6 +293,7 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
   #voices .reviews .postcardTop{min-height:55px}
 }
 </style>
+<link rel="stylesheet" href="assets/guestbook.css">
 </head>
 <body>
 <nav class="nav"><div class="brand">ON THE <span>WAY</span></div><div class="navlinks">
@@ -471,6 +472,7 @@ const data = {
 const overlay=document.getElementById('detail'), body=document.getElementById('detailBody');
 document.querySelectorAll('.story').forEach(btn=>btn.addEventListener('click',()=>{
   const id=btn.dataset.story;
+  if(id==='06'){window.BMWGuestbook.open();return;}
   body.innerHTML=id==='01' ? '<div class="storyVideoWrap"><iframe class="storyVideo" src="https://www.youtube.com/embed/9FbBOKy4SB4?autoplay=1&amp;playsinline=1&amp;rel=0" title="01 年度挑戰影片" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="storyVideoHelp">若未自動播放，請按播放器的播放鍵。亦可<a href="https://youtu.be/9FbBOKy4SB4" target="_blank" rel="noopener noreferrer">在 YouTube 觀看</a>。</p></div>' : data[id];
   overlay.classList.add('open'); document.body.style.overflow='hidden';
 }));
@@ -586,4 +588,5 @@ document.getElementById('finalClose').onclick=()=>{final.classList.remove('open'
 <div class="albumControls"><button type="button" class="albumPlay">播放相簿</button><p class="albumCounter" role="status" aria-live="polite"></p><span>16:9 回憶放映室</span></div><p class="albumCaption"></p><div class="albumThumbs" role="group" aria-label="選擇相簿照片"></div>
 </dialog><script src="assets/memories.js?v=5" defer></script>
 <script src="assets/reviews.js" defer></script>
+<script src="assets/guestbook.js" defer></script>
 </body></html>
