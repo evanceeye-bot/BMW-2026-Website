@@ -295,29 +295,7 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 </style>
 <link rel="stylesheet" href="assets/guestbook.css?v=2">
 
-<style id="postcard-story-entrance">
-#stories .storyPostcard{container-type:inline-size}
-#stories .postcardCoverArt{position:absolute;inset:9px;border-radius:24px;overflow:hidden;display:block;background:#c9dfe8}
-#stories .storyPostcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-#stories .postcardCoverShade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 36%,#08243770 60%,#061f32f2 100%)}
-#stories .postcardCoverNo{position:absolute;top:4%;left:4%;display:grid;place-items:center;width:16%;aspect-ratio:1;border-radius:50%;background:#fffffff5;color:#0b2b42;font:800 10cqw/1 "DM Sans",sans-serif}
-#stories .postcardCoverExplore{position:absolute;top:4%;right:4%;padding:2.3% 3.4%;border-radius:999px;background:#fffffff2;color:#123249;font:800 2.3cqw/1 "DM Sans",sans-serif;letter-spacing:.13em}
-#stories .postcardCoverCopy{position:absolute;left:4.5%;right:4.5%;bottom:4.5%;color:white;display:flex;flex-direction:column;align-items:flex-start;gap:2.2cqw}
-#stories .postcardCoverCopy small{font:800 2.35cqw/1.5 "DM Sans",sans-serif;letter-spacing:.08em;color:#ffda4c}
-#stories .postcardCoverCopy strong{font:800 6.5cqw/1.3 "Noto Sans TC",sans-serif;letter-spacing:0;text-shadow:0 2px 6px #001a2c80}
-#stories .postcardCoverCopy>span{font:500 3.2cqw/1.7 "Noto Sans TC",sans-serif;color:#f2f7fa;text-wrap:pretty}
-#stories .postcardCoverCopy em{font:800 3.6cqw/1.5 "Noto Sans TC",sans-serif;font-style:normal;padding:2.5% 5%;margin-top:1cqw;border:1px solid #ffffffc9;border-radius:12px;background:#ffffff12}
-@media(max-width:640px){#stories .postcardCoverArt{inset:7px;border-radius:22px}}
-</style>
 
-<style id="postcard-cover-type">
-@font-face{font-family:"Postcard Cover TC";src:url("assets/fonts/postcard-cover-tc-bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
-#stories .postcardCoverCopy strong{font-family:"Postcard Cover TC","Noto Sans TC",sans-serif;font-weight:900;font-size:7cqw;line-height:1.35;letter-spacing:.01em}
-#stories .postcardCoverCopy>span{font-family:"Noto Sans TC","Noto Sans CJK TC",sans-serif;font-size:3.3cqw;font-weight:500}
-#stories .postcardCoverCopy em{font-family:"Postcard Cover TC","Noto Sans TC",sans-serif;font-weight:900;font-size:4cqw;letter-spacing:.03em}
-#stories .postcardCoverCopy small{font-family:"Postcard Cover TC",Arial,sans-serif;font-weight:700;letter-spacing:.12em;font-size:2.4cqw}
-#stories .postcardCoverNo,#stories .postcardCoverExplore{font-family:"Postcard Cover TC",Arial,sans-serif;font-weight:700}
-</style>
 </head>
 <body>
 <nav class="nav"><div class="brand">ON THE <span>WAY</span></div><div class="navlinks">
@@ -370,8 +348,8 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 <button class="story" data-story="05" aria-label="第5站：一生至少一次！夢幻體驗清單">
   <img src="assets/images/story-cover-05.jpg" alt="一生至少一次！夢幻體驗清單" width="1254" height="1254" loading="lazy">
 </button>
-<button class="story storyPostcard" data-story="06" aria-label="第6站：下一站，祝福。寄出我的明信片">
-  <span class="postcardCoverArt"><img src="assets/images/story-postcards-male.webp" alt="短髮男生在咖啡桌邊寫明信片，桌上放著地圖、相機與旅行照片" width="1254" height="1254" loading="lazy"><span class="postcardCoverShade"></span><span class="postcardCoverNo">06</span><span class="postcardCoverExplore">EXPLORE</span><span class="postcardCoverCopy"><small>POSTCARDS TO OUR NEXT SELVES</small><strong>下一站，祝福</strong><span>寫下期待、送上祝福，把想說的話留給一起出發的夥伴。</span><em>寄出我的明信片 →</em></span></span>
+<button class="story" data-story="06" aria-label="第6站：下一站，祝福。寄出我的明信片">
+  <img src="assets/images/story-cover-06-postcards.jpg" alt="06 下一站，祝福。寫下期待、送上祝福，把想說的話留給一起出發的夥伴。寄出我的明信片。短髮男生在咖啡桌邊寫明信片。" width="1254" height="1254" loading="lazy">
 </button></div></div>
 </section>
 
@@ -399,7 +377,7 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 <section class="section memory" id="memories"><div class="shell"><div class="kicker">TRAVEL MEMORIES</div><h2>走過的風景，都是我們的里程。</h2><p class="lede">每一次並肩出發、每一個爆笑瞬間，都會變成下一段旅程的養分。</p><div class="albumRailToolbar"><p>左右拖曳，翻閱六本旅程相簿</p><div><button type="button" class="albumRailPrev" aria-label="往前查看相簿">←</button><button type="button" class="albumRailNext" aria-label="往後查看相簿">→</button></div></div><div class="polas" aria-label="六本旅程相簿"><button type="button" class="pola albumEntry" data-album="food" aria-haspopup="dialog" aria-controls="memoryAlbum"><img src="assets/images/memories/food-07.webp" alt="二部 · 感恩餐車餐會活動照片" loading="lazy"><b>好食光</b><span class="albumEntryNote">14 張照片 · 點開相簿 ↗</span></button><button type="button" class="pola albumEntry" data-album="celebrate" aria-haspopup="dialog" aria-controls="memoryAlbum"><img src="assets/images/memories/celebrate-05.webp" alt="九部 · 中秋活動活動照片" loading="lazy"><b>節慶同樂</b><span class="albumEntryNote">15 張照片 · 點開相簿 ↗</span></button><button type="button" class="pola albumEntry" data-album="together" aria-haspopup="dialog" aria-controls="memoryAlbum"><img src="assets/images/memories/together-14.webp" alt="五部 · 團隊合照活動照片" loading="lazy"><b>我們在一起</b><span class="albumEntryNote">7 張照片 · 點開相簿 ↗</span></button><button type="button" class="pola albumEntry" data-album="esg" aria-haspopup="dialog" aria-controls="memoryAlbum"><img src="assets/images/photo-02-9f0b3660.png" alt="" loading="lazy"><b>ESG 活動</b><span class="albumEntryNote">照片待補 · 查看相簿 ↗</span></button><button type="button" class="pola albumEntry" data-album="learning" aria-haspopup="dialog" aria-controls="memoryAlbum"><img src="assets/images/photo-09-5004dbf9.png" alt="" loading="lazy"><b>訓練課程</b><span class="albumEntryNote">照片待補 · 查看相簿 ↗</span></button><button type="button" class="pola albumEntry" data-album="dialogue" aria-haspopup="dialog" aria-controls="memoryAlbum"><img src="assets/images/memories/dialogue-new-02.webp" alt="四部員工座談會合照" loading="lazy"><b>員工座談會</b><span class="albumEntryNote">11 張照片 · 點開相簿 ↗</span></button></div><p class="albumCoverNote">已收錄 36 張活動照片與 11 張員工座談會照片；ESG 活動及訓練課程照片待補，封面暫為旅行示意圖。</p></div></section>
 
 <section class="section nextSec" id="next"><div class="shell"><div class="kicker">NEXT STOP...</div><h2>下一站，還有一段風景等著我們一起打開。</h2><p class="lede">前面的路已經走成故事；最後一站暫時留白，等真正走到那裡，再一起揭開。</p>
-<div class="nextGrid"><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-cover-01.jpg" alt="出發吧！旅行模式 ON" width="1254" height="1254" loading="lazy"><b>出發吧！旅行模式 ON</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-cover-02.jpg" alt="行李箱裡，藏著什麼秘密？" width="1254" height="1254" loading="lazy"><b>行李箱裡，藏著什麼秘密？</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-cover-03.jpg" alt="空中限定！本期必看" width="1254" height="1254" loading="lazy"><b>空中限定！本期必看</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-cover-04.jpg" alt="旅行開外掛！私藏路線大公開" width="1254" height="1254" loading="lazy"><b>旅行開外掛！私藏路線大公開</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-cover-05.jpg" alt="一生至少一次！夢幻體驗清單" width="1254" height="1254" loading="lazy"><b>一生至少一次！夢幻體驗清單</b></div><div class="locked" id="locked"><img src="assets/images/story-postcards-male.webp" alt="短髮男生在咖啡桌邊寫明信片，下一站祝福" width="1254" height="1254" loading="lazy"><button id="unlockBtn" aria-label="解鎖第六站，開啟下一站驚喜"><span class="lockIcon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M10 14V9a6 6 0 0 1 12 0v5" stroke="currentColor" stroke-width="3"/><rect x="5" y="13" width="22" height="17" rx="4" fill="currentColor"/><path d="M16 20v4" stroke="#16364b" stroke-width="3" stroke-linecap="round"/></svg></span></button><b>下一站，祝福</b></div></div></div></section>
+<div class="nextGrid"><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-cover-01.jpg" alt="出發吧！旅行模式 ON" width="1254" height="1254" loading="lazy"><b>出發吧！旅行模式 ON</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-cover-02.jpg" alt="行李箱裡，藏著什麼秘密？" width="1254" height="1254" loading="lazy"><b>行李箱裡，藏著什麼秘密？</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-cover-03.jpg" alt="空中限定！本期必看" width="1254" height="1254" loading="lazy"><b>空中限定！本期必看</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-cover-04.jpg" alt="旅行開外掛！私藏路線大公開" width="1254" height="1254" loading="lazy"><b>旅行開外掛！私藏路線大公開</b></div><div class="mini"><span class="unlockedMark" aria-label="已解鎖">✓</span><img src="assets/images/story-cover-05.jpg" alt="一生至少一次！夢幻體驗清單" width="1254" height="1254" loading="lazy"><b>一生至少一次！夢幻體驗清單</b></div><div class="locked" id="locked"><img src="assets/images/story-cover-06-postcards.jpg" alt="短髮男生在咖啡桌邊寫明信片，下一站祝福" width="1254" height="1254" loading="lazy"><button id="unlockBtn" aria-label="解鎖第六站，開啟下一站驚喜"><span class="lockIcon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M10 14V9a6 6 0 0 1 12 0v5" stroke="currentColor" stroke-width="3"/><rect x="5" y="13" width="22" height="17" rx="4" fill="currentColor"/><path d="M16 20v4" stroke="#16364b" stroke-width="3" stroke-linecap="round"/></svg></span></button><b>下一站，祝福</b></div></div></div></section>
 
 <div class="overlay" id="detail">
 <div class="panel"><button class="close" id="closeDetail">×</button><div id="detailBody"></div></div>
