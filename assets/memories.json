@@ -256,74 +256,74 @@
       {
         "src": "assets/images/memories/dialogue-update-20261104.webp",
         "thumbnail": "assets/images/memories/dialogue-update-20261104-thumb.webp",
-        "caption": "6月11日 · 台中三民",
-        "alt": "6月11日 · 台中三民員工座談會合照"
-      },
-      {
-        "src": "assets/images/memories/dialogue-new-01.webp",
-        "thumbnail": "assets/images/memories/dialogue-new-01-thumb.webp",
         "caption": "7月15日 · 桃園",
         "alt": "7月15日 · 桃園員工座談會合照"
       },
       {
-        "src": "assets/images/memories/dialogue-new-02.webp",
-        "thumbnail": "assets/images/memories/dialogue-new-02-thumb.webp",
+        "src": "assets/images/memories/dialogue-new-01.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-01-thumb.webp",
         "caption": "8月6日 · 高雄",
         "alt": "8月6日 · 高雄員工座談會合照"
       },
       {
-        "src": "assets/images/memories/dialogue-new-03.webp",
-        "thumbnail": "assets/images/memories/dialogue-new-03-thumb.webp",
+        "src": "assets/images/memories/dialogue-new-02.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-02-thumb.webp",
         "caption": "9月18日 · 宜蘭",
         "alt": "9月18日 · 宜蘭員工座談會合照"
       },
       {
-        "src": "assets/images/memories/dialogue-new-04.webp",
-        "thumbnail": "assets/images/memories/dialogue-new-04-thumb.webp",
+        "src": "assets/images/memories/dialogue-new-03.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-03-thumb.webp",
         "caption": "6月10日 · 台中華信",
         "alt": "6月10日 · 台中華信員工座談會合照"
       },
       {
-        "src": "assets/images/memories/dialogue-new-05.webp",
-        "thumbnail": "assets/images/memories/dialogue-new-05-thumb.webp",
+        "src": "assets/images/memories/dialogue-new-04.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-04-thumb.webp",
         "caption": "6月10日 · 台中梅亭",
         "alt": "6月10日 · 台中梅亭員工座談會合照"
       },
       {
-        "src": "assets/images/memories/dialogue-new-06.webp",
-        "thumbnail": "assets/images/memories/dialogue-new-06-thumb.webp",
+        "src": "assets/images/memories/dialogue-new-05.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-05-thumb.webp",
         "caption": "8月6日 · 高雄",
         "alt": "8月6日 · 高雄員工座談會合照"
       },
       {
-        "src": "assets/images/memories/dialogue-new-07.webp",
-        "thumbnail": "assets/images/memories/dialogue-new-07-thumb.webp",
+        "src": "assets/images/memories/dialogue-new-06.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-06-thumb.webp",
         "caption": "7月21日 · 台南",
         "alt": "7月21日 · 台南員工座談會合照"
       },
       {
-        "src": "assets/images/memories/dialogue-new-08.webp",
-        "thumbnail": "assets/images/memories/dialogue-new-08-thumb.webp",
+        "src": "assets/images/memories/dialogue-new-07.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-07-thumb.webp",
         "caption": "8月20日 · 台北",
         "alt": "8月20日 · 台北員工座談會合照"
       },
       {
-        "src": "assets/images/memories/dialogue-new-09.webp",
-        "thumbnail": "assets/images/memories/dialogue-new-09-thumb.webp",
+        "src": "assets/images/memories/dialogue-new-08.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-08-thumb.webp",
         "caption": "8月25日 · 板橋",
         "alt": "8月25日 · 板橋員工座談會合照"
       },
       {
-        "src": "assets/images/memories/dialogue-new-10.webp",
-        "thumbnail": "assets/images/memories/dialogue-new-10-thumb.webp",
+        "src": "assets/images/memories/dialogue-new-09.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-09-thumb.webp",
         "caption": "8月7日 · 高雄左營",
         "alt": "8月7日 · 高雄左營員工座談會合照"
       },
       {
-        "src": "assets/images/memories/dialogue-new-11.webp",
-        "thumbnail": "assets/images/memories/dialogue-new-11-thumb.webp",
+        "src": "assets/images/memories/dialogue-new-10.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-10-thumb.webp",
         "caption": "10月2日 · 三重",
         "alt": "10月2日 · 三重員工座談會合照"
+      },
+      {
+        "src": "assets/images/memories/dialogue-new-11.webp",
+        "thumbnail": "assets/images/memories/dialogue-new-11-thumb.webp",
+        "caption": "6月11日 · 台中三民",
+        "alt": "6月11日 · 台中三民員工座談會合照"
       }
     ]
   }
