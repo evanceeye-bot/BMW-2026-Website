@@ -31,7 +31,7 @@
     button.disabled = true;
     reveal.replaceChildren(content.content.cloneNode(true));
     if (reduced.matches) finish();
-    else timer = setTimeout(finish, 1900); // + .5s paper reveal = 2.4s total.
+    else timer = setTimeout(finish, 3650); // Flap + extraction, then 1.1s full-size paper reveal = 4.75s total.
   });
   reduced.addEventListener('change', event => {
     if (event.matches) {root.classList.add('isVisible');finish();}
