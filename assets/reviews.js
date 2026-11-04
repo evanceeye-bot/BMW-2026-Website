@@ -18,5 +18,6 @@
   });
   window.addEventListener('resize', measure);
   if (document.fonts) document.fonts.ready.then(measure);
+  window.BMWReviewsMeasure = measure;
   measure();
 })();
