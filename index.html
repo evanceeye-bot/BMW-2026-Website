@@ -296,6 +296,21 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 <link rel="stylesheet" href="assets/guestbook.css?v=2">
 
 
+
+<style id="relaxed-postcard-wall">
+#voices .reviews{gap:42px 28px;padding:16px 9px 28px}
+#voices .reviews .review{--card-tilt:-1.3deg;--card-rise:3px;--tape:#ffdc71;transform:translateY(var(--card-rise)) rotate(var(--card-tilt));box-shadow:0 10px 22px #031c2e4a;transform-origin:50% 20%}
+#voices .reviews .review:nth-child(6n+2){--card-tilt:.8deg;--card-rise:12px;--tape:#f1aebe}
+#voices .reviews .review:nth-child(6n+3){--card-tilt:-.5deg;--card-rise:-3px;--tape:#96d6cf}
+#voices .reviews .review:nth-child(6n+4){--card-tilt:1.2deg;--card-rise:7px;--tape:#ffdc71}
+#voices .reviews .review:nth-child(6n+5){--card-tilt:.5deg;--card-rise:-5px;--tape:#b4c8ed}
+#voices .reviews .review:nth-child(6n){--card-tilt:-.9deg;--card-rise:10px;--tape:#96d6cf}
+#voices .reviews .review:before{top:-6px;left:calc(50% - 21px);width:42px;height:13px;background:var(--tape);opacity:.9;transform:rotate(-4deg);box-shadow:0 1px 3px #092a3a26;clip-path:polygon(3% 0,100% 6%,97% 100%,0 93%)}
+@media(max-width:640px){
+  #voices .reviews{gap:34px;padding:14px 6px 22px}
+  #voices .reviews .review{transform:translateY(calc(var(--card-rise) * .4)) rotate(calc(var(--card-tilt) * .65))}
+}
+</style>
 </head>
 <body>
 <nav class="nav"><div class="brand">ON THE <span>WAY</span></div><div class="navlinks">
