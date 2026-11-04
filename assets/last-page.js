@@ -14,7 +14,8 @@
     if (root.dataset.state !== 'opening') return;
     clearTimeout(timer);
     root.dataset.state = 'opened';
-    reveal.hidden = false;
+    reveal.inert = false;
+    reveal.removeAttribute('aria-hidden');
     button.setAttribute('aria-expanded', 'true');
     button.setAttribute('aria-label', '旅程最後一封信已開啟');
     status.textContent = '信封已開啟。';
@@ -30,8 +31,21 @@
     root.classList.add('isVisible');
     button.disabled = true;
     reveal.replaceChildren(content.content.cloneNode(true));
+    reveal.hidden = false;
+    reveal.inert = true;
+    reveal.setAttribute('aria-hidden', 'true');
+    const stage = root.querySelector('.lastPageStage');
+    const sizeSheet = () => {
+      const height = Math.max(matchMedia('(max-width:640px)').matches ? 320 : 360, reveal.offsetHeight + 40);
+      stage.style.setProperty('--last-page-open-height', `${height}px`);
+      reveal.style.setProperty('--paper-start-y', `${height - button.offsetHeight - 24}px`);
+      reveal.style.setProperty('--paper-start-scale', String(button.clientWidth * .88 / reveal.clientWidth));
+    };
+    sizeSheet();
+    // Keep replacement images/video and viewport resizing within the paper page.
+    if ('ResizeObserver' in window) new ResizeObserver(sizeSheet).observe(reveal);
     if (reduced.matches) finish();
-    else timer = setTimeout(finish, 3650); // Flap + extraction, then 1.1s full-size paper reveal = 4.75s total.
+    else timer = setTimeout(finish, 3650); // The sheet finishes sliding before its text fades in.
   });
   reduced.addEventListener('change', event => {
     if (event.matches) {root.classList.add('isVisible');finish();}
