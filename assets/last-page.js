@@ -24,6 +24,8 @@
   };
   button.addEventListener('click', () => {
     if (root.dataset.state !== 'sealed') return;
+    // Freeze the current float offset before opening, without a position jump.
+    button.style.translate = getComputedStyle(button).translate;
     root.dataset.state = 'opening';
     root.classList.add('isVisible');
     button.disabled = true;
