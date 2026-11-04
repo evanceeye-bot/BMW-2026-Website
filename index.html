@@ -73,6 +73,16 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 @media(max-width:640px){.journalSection{padding-top:45px}.journalScene{height:365px;border-radius:22px}.journalCopy h2{font-size:35px}.journalCopy .lede{font-size:15px}.journalPolaroid{padding:7px 7px 23px}.journalPolaroid b{font-size:12px}.journalBoarding{height:78px;padding:9px}.journalBoarding b{font-size:16px}.journalBoarding small,.journalBoarding span{font-size:7px}.bookHeader{font-size:22px}.bookHeader span{font-size:12px}.bookStamp{width:66px;height:66px;font-size:7px}.journalGlasses{scale:.83;transform-origin:right bottom}.journalPassport .passMark{font-size:29px}.journalPassport small{font-size:8px}.journalPassport b{font-size:9px}.journalPassport em{font-size:7px}.journalSticker.stickerA{height:43px;width:43px;font-size:8px}}
 @media(prefers-reduced-motion:reduce){.journalScene *{animation:none!important}}
 
+
+/* BMW boarding-pass: sequential scroll-triggered typewriter */
+.flight b[data-ticket-type]{min-height:1.5em;white-space:normal}
+.flight .ticketReady{color:#ed6338}
+.ticketTyping .flight b[data-ticket-type]:not(.typing):not(.typed){visibility:hidden}
+.ticketTyping .flight b.typing::after{content:"▌";display:inline-block;color:#ed6338;animation:ticketCaretBlink .6s steps(1,end) infinite}
+.ticketTyping .flight b.typed::after{content:none}
+@keyframes ticketCaretBlink{50%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.ticketTyping .flight b.typing::after{animation:none}}
+
 </style>
 
 <style id="travel-demo-style">
@@ -168,7 +178,7 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 <div class="ticketStub">BOARDING PASS</div>
 <div class="ticketMain">
 <div class="ticketTitle"><strong>BMW 2026</strong><em>Annual Journey</em></div>
-<div class="flight"><div><span>DESTINATION</span><b>下一站 · 更好的我們</b></div><div><span>PASSENGERS</span><b>Customer Service Team</b></div><div><span>DATE</span><b>JAN — DEC 2026</b></div><div><span>FLIGHT</span><b>BMW2026</b></div></div>
+<div class="flight"><div><span>TRAVEL COMPANIONS｜旅伴</span><b data-ticket-type>每一位同行的你</b></div><div><span>TRAVEL PERIOD｜旅程期間</span><b data-ticket-type>JAN — DEC 2026</b></div><div><span>NEXT DESTINATION｜下一站</span><b data-ticket-type>2027・精彩繼續</b></div><div><span>BOARDING STATUS｜登機狀態</span><b data-ticket-type class="ticketReady">READY FOR 2027</b></div></div>
 </div><div class="ticketSide"><div class="barcode"></div></div><div class="ticketBadge">CUSTOMER SERVICE · ANNUAL JOURNEY</div>
 </div>
 </div>
@@ -267,6 +277,49 @@ filter:blur(.2px)}.routeSVG{position:absolute;inset:0;width:100%;height:100%}.ro
 <div class="finalOverlay" id="finalOverlay"><button class="finalClose" id="finalClose">×</button><img src="assets/images/photo-10-7f41fbdb.png" alt="2027 HERE WE COME"></div>
 
 <script>
+
+/* Boarding pass: one sequence per page load, when scrolled into view. */
+(()=>{
+  const ticket=document.querySelector('#journey .ticket');
+  if(!ticket)return;
+  const targets=[...ticket.querySelectorAll('[data-ticket-type]')];
+  if(targets.length!==4)return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  const originals=targets.map(node=>node.textContent);
+  ticket.classList.add('ticketTyping');
+  targets.forEach(node=>{node.textContent='';node.setAttribute('aria-hidden','true')});
+  const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+  const split=text=>typeof Intl.Segmenter==='function'
+    ? [...new Intl.Segmenter('zh-Hant',{granularity:'grapheme'}).segment(text)].map(item=>item.segment)
+    : Array.from(text);
+  let started=false;
+  async function play(){
+    if(started)return;
+    started=true;
+    for(let i=0;i<targets.length;i++){
+      const node=targets[i];
+      node.classList.add('typing');
+      for(const char of split(originals[i])){
+        node.textContent+=char;
+        await wait(/[A-Za-z0-9]/.test(char)?55:85);
+      }
+      node.classList.remove('typing');
+      node.classList.add('typed');
+      node.removeAttribute('aria-hidden');
+      await wait(i===targets.length-1?0:210);
+    }
+    ticket.classList.remove('ticketTyping');
+  }
+  if(!('IntersectionObserver' in window)){play();return}
+  const observer=new IntersectionObserver(entries=>{
+    if(entries.some(entry=>entry.isIntersecting)){
+      observer.disconnect();
+      play();
+    }
+  },{threshold:0.55});
+  observer.observe(ticket);
+})();
+
 const data = {
 "01": `
 <div class="v3Hero" style="background-image:url('assets/images/photo-11-00df66f7.png')">
