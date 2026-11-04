@@ -121,7 +121,7 @@
 .memoryAlbum[data-theme="dialogue"] .albumThumbs button:hover{transform:translateY(-4px) rotate(0);box-shadow:0 12px 22px #1b536035}
 .memoryAlbum[data-theme="dialogue"] .albumThumbs button[aria-current="true"]{background:#fff;outline:2px solid #268da0;outline-offset:3px}
 .memoryAlbum[data-theme="dialogue"]:not(.isViewingPhoto) .albumThumbs button[aria-current="true"]{outline:none}
-.memoryAlbum[data-theme="dialogue"] .albumCaption{display:none}
+.memoryAlbum[data-theme="dialogue"].isViewingPhoto .albumCaption{display:block}
 .memoryAlbum[data-theme="dialogue"] .albumPlay{background:#23899a}
 .memoryAlbum[data-theme="dialogue"] .albumStage{border:7px solid #fff;border-radius:5px;width:calc(100% - 14px);box-sizing:content-box}
 @media(max-width:640px){.memoryAlbum[data-theme="dialogue"]{padding:20px 14px}.memoryAlbum[data-theme="dialogue"] .albumThumbs{gap:21px 14px;padding:6px 5px 16px}.memoryAlbum[data-theme="dialogue"] .albumThumbs button{padding:6px 6px 15px}.memoryAlbum[data-theme="dialogue"] .albumThumbs:before{font-size:12px}.memoryAlbum[data-theme="dialogue"] .albumHead>div{padding-right:20px}}

@@ -45,6 +45,13 @@
       thumb.setAttribute('aria-label', `查看第 ${i + 1} 張照片`);
       const img = document.createElement('img'); img.src = photo.thumbnail || photo.src; img.alt = ''; img.loading = 'lazy';
       thumb.append(img);
+      if (album.id === 'dialogue' && photo.caption) {
+        const title = document.createElement('span');
+        title.className = 'albumPhotoTitle';
+        title.textContent = photo.caption;
+        thumb.append(title);
+        thumb.setAttribute('aria-label', `查看第 ${i + 1} 張照片：${photo.caption}`);
+      }
       thumb.addEventListener('click', () => { stop(); show(i); if (album.id === 'dialogue') { dialog.classList.add('isViewingPhoto'); dialog.scrollTo({top:0,behavior:'instant'}); } }); thumbs.append(thumb);
     });
     oldOverflow = document.body.style.overflow; document.body.style.overflow = 'hidden';
@@ -114,7 +121,7 @@
   rail.addEventListener('click', event => { if (suppressClick) {event.preventDefault();event.stopImmediatePropagation();} }, true);
   updateArrows();
 
-  const ready = fetch('assets/memories.json?v=6').then(response => { if (!response.ok) throw new Error('Album data unavailable'); return response.json(); }).then(data => {
+  const ready = fetch('assets/memories.json?v=7').then(response => { if (!response.ok) throw new Error('Album data unavailable'); return response.json(); }).then(data => {
     albums = data;
     entries.forEach(button => {
       const album = albums.find(item => item.id === button.dataset.album);
