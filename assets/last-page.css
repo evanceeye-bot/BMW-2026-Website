@@ -41,7 +41,7 @@
 #next[data-state="opening"] .lastPageSeal,#next[data-state="opened"] .lastPageSeal{animation:lastPageUnseal .32s ease forwards}
 #next[data-state="opening"] .lastPageFlap,#next[data-state="opened"] .lastPageFlap{animation:lastPageOpenFlap .65s .25s ease forwards}
 #next[data-state="opening"] .lastPageLetter{animation:lastPageExtract .95s .85s cubic-bezier(.22,.7,.3,1) both}
-#next[data-state="opened"] .lastPageFlap{animation:none;transform:rotateX(180deg);z-index:1}
+#next[data-state="opened"] .lastPageFlap{animation:none;transform:rotateX(110deg);z-index:1}
 #next[data-state="opened"] .lastPageSeal{animation:none;opacity:0}
 #next[data-state="opened"] .lastPageLetter{opacity:0}
 #next[data-state="opened"] .lastPageEnvelopeArt{transform:translateY(22px) scale(.92);filter:drop-shadow(0 9px 10px #7259361f);transition:transform .55s ease}
@@ -50,8 +50,8 @@
 @keyframes lastPageAppear{from{opacity:0}to{opacity:1}}
 @keyframes lastPageFloatIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 @keyframes lastPageUnseal{to{opacity:0;transform:translate(-50%,-50%) scale(.84)}}
-@keyframes lastPageOpenFlap{0%{transform:rotateX(0);z-index:6}65%{z-index:6}100%{transform:rotateX(180deg);z-index:1}}
-@keyframes lastPageExtract{0%{opacity:0;transform:translateY(0) scaleY(.82)}15%{opacity:1}100%{opacity:1;transform:translateY(-42%) scaleY(1.08)}}
+@keyframes lastPageOpenFlap{0%{transform:rotateX(0);z-index:6}65%{z-index:6}100%{transform:rotateX(110deg);z-index:1}}
+@keyframes lastPageExtract{0%{opacity:0;transform:translateY(0) scaleY(.82)}15%{opacity:1}100%{opacity:1;transform:translateY(-25%) scaleY(1.08)}}
 @keyframes lastPageReveal{from{opacity:0;transform:translateY(10px) scaleY(.96)}to{opacity:1;transform:translateY(0) scaleY(1)}}
 @media(max-width:640px){#next{padding-top:32px;padding-bottom:72px}#next .lastPageCard{padding:38px 20px 28px;border-radius:18px}#next .lastPageCard:before{inset:12px;border-radius:10px}#next .lastPageKicker{font-size:9px;letter-spacing:.14em}#next h2{font-size:clamp(25px,6.4vw,34px);line-height:1.6}#next .lastPageStage{min-height:390px;margin-top:10px}#next .lastPageEnvelope{width:280px;bottom:35px;max-width:calc(100% - 12px)}#next .lastPageSeal{width:46px;height:46px}#next .lastPageSeal svg{width:25px;height:25px}#next .lastPageMessage{padding:36px 18px 32px;background-image:none}#next .lastPageMessageKicker{font-size:9px;letter-spacing:.12em}#next .lastPageMessage h3{font-size:clamp(23px,6vw,30px)}#next .lastPageMessageBody{font-size:14px;line-height:1.9}#next .lastPageHint{font-size:12px;letter-spacing:0}#next .lastPageReveal{margin-bottom:90px}}
 @media(prefers-reduced-motion:reduce){#next *,#next *:before,#next *:after{animation:none!important;transition:none!important}#next.isReady .lastPageCard{opacity:1}}
@@ -99,3 +99,11 @@
 #next[data-state="sealed"] .lastPageEnvelope:focus-visible{animation-play-state:paused}
 @media(max-width:640px){#next{padding-top:24px;padding-bottom:48px}#next .lastPageCard{padding-top:26px;padding-bottom:16px}#next .lastPageKicker{margin-bottom:12px}#next .lastPageStage{min-height:300px;margin-top:10px}#next .lastPageEnvelope{width:260px;bottom:18px}#next .lastPageColophon{margin-top:16px;padding-top:10px}}
 @media(max-width:360px){#next .lastPageMessage h3{font-size:22px;letter-spacing:.02em}}
+
+/* Keep the stationery intimate rather than spanning the full page. */
+#next .lastPageCard{max-width:900px;margin-inline:auto;padding:28px 36px 20px}
+#next .lastPageStage{min-height:265px;margin-top:10px}
+#next .lastPageEnvelope{width:320px;bottom:12px}
+#next .lastPageReveal{margin-bottom:0}
+#next .lastPageColophon{margin-top:14px}
+@media(max-width:640px){#next .lastPageCard{padding:26px 20px 16px}#next .lastPageStage{min-height:245px;margin-top:8px}#next .lastPageEnvelope{width:260px;bottom:12px}#next .lastPageReveal{margin-bottom:0}}
