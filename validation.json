@@ -1,0 +1,26 @@
+{
+  "duration_seconds": 15,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "frames": 450,
+  "audio_streams": 0,
+  "decode": "full-file decode passed",
+  "reviewed_mp4_times": [
+    1.5,
+    2.8,
+    4.8,
+    5.8,
+    6.8,
+    8.3,
+    10.5,
+    13.5,
+    14.7
+  ],
+  "motion_pixel_change": 8.527095389660495,
+  "letter_copy": "original website text",
+  "website_modified": false,
+  "file_bytes": 1859126
+}

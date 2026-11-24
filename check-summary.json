@@ -1,0 +1,12 @@
+{
+  "check_passed": true,
+  "lint_errors": 0,
+  "runtime_errors": 0,
+  "layout_errors": 0,
+  "contrast_passed": 20,
+  "contrast_total": 20,
+  "reviewed_craft_warning_codes": [
+    "first_frame_empty",
+    "text_below_floor"
+  ]
+}
