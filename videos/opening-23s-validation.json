@@ -1,0 +1,15 @@
+{
+  "duration_seconds": 23,
+  "frames": 690,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "audio_streams": 0,
+  "bytes": 10483787,
+  "decode": "full-file decode passed",
+  "reviewed_frames": 12,
+  "boarding_text_complete": true,
+  "website_modified": false
+}

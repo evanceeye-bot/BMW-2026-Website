@@ -1,0 +1,41 @@
+{
+  "source_commit": "d6d4237063dece47b2bb567e62b9a388baea3f7a",
+  "source_video_branch_commit": "d624ea20425a12fde0d5d2fea4734d64afb2567d",
+  "source_video_path": "videos/bmw-latest-silent-walkthrough.mp4",
+  "source_duration": 42,
+  "output_duration": 23,
+  "segments": [
+    {
+      "source_start": 0,
+      "source_end": 4,
+      "output_duration": 3
+    },
+    {
+      "source_start": 4,
+      "source_end": 9,
+      "output_duration": 2.5
+    },
+    {
+      "source_start": 9,
+      "source_end": 18,
+      "output_duration": 3
+    },
+    {
+      "source_start": 18,
+      "source_end": 23,
+      "output_duration": 2.5
+    },
+    {
+      "source_start": 23,
+      "source_end": 34,
+      "output_duration": 10
+    },
+    {
+      "source_start": 34,
+      "source_end": 42,
+      "output_duration": 2
+    }
+  ],
+  "audio": false,
+  "website_modified": false
+}
