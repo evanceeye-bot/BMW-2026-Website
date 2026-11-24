@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "duration_seconds": 8,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "frames": 240,
+  "audio_streams": 0,
+  "decode": "full-file decode passed",
+  "source_video": "bmw-last-letter-15s-v1.mp4",
+  "retime_ratio": 0.5333333333333333,
+  "reading_hold_seconds": 2.1,
+  "website_modified": false,
+  "file_bytes": 942670
+}
