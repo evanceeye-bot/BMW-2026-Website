@@ -1,0 +1,40 @@
+[
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "result": {
+      "src": "http://127.0.0.1:8090/assets/videos/journey-notes-v3.mp4",
+      "width": 1280,
+      "height": 720,
+      "muted": true,
+      "loop": true,
+      "autoplay": true,
+      "paused": false,
+      "time": 1.161129,
+      "renderWidth": 805,
+      "renderHeight": 452.8125,
+      "error": null
+    }
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "result": {
+      "src": "http://127.0.0.1:8090/assets/videos/journey-notes-v3.mp4",
+      "width": 1280,
+      "height": 720,
+      "muted": true,
+      "loop": true,
+      "autoplay": true,
+      "paused": false,
+      "time": 1.070914,
+      "renderWidth": 362,
+      "renderHeight": 203.625,
+      "error": null
+    }
+  }
+]

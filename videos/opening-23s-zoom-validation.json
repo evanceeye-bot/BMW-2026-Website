@@ -1,0 +1,34 @@
+{
+  "website_commit": "514426857bac3830521bda206d0f20db9878e166",
+  "duration_seconds": 23,
+  "frames": 690,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "audio_streams": 0,
+  "zoom_start_seconds": 9,
+  "zoom_end_seconds": 10.8,
+  "zoom_final": 1.3,
+  "ticket_fully_in_frame": true,
+  "typewriter_complete": true,
+  "website_video_dimensions": [
+    1280,
+    720
+  ],
+  "website_video_silent": true,
+  "website_smoke_viewports": [
+    [
+      1920,
+      1080
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "decode": "full-file decode passed",
+  "reviewed_frames": 12,
+  "bytes": 3823161
+}
