@@ -1,0 +1,15 @@
+{
+  "sample_times": [
+    5,
+    6.667
+  ],
+  "crop": [
+    950,
+    400,
+    1450,
+    700
+  ],
+  "mean_absolute_pixel_change": 44.167628888888885,
+  "threshold": 5,
+  "passed": true
+}

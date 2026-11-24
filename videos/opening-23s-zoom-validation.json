@@ -30,5 +30,7 @@
   ],
   "decode": "full-file decode passed",
   "reviewed_frames": 12,
-  "bytes": 3823161
+  "bytes": 3823161,
+  "superseded_by": "bmw-opening-23s-journal-zoom-v3.mp4",
+  "known_issue": "Journal video capture stayed on first frame; initial playback validation was insufficient."
 }

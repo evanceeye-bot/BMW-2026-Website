@@ -1,0 +1,19 @@
+{
+  "version": 3,
+  "duration_seconds": 23,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "frames": 690,
+  "audio_streams": 0,
+  "native_journal_frames": 240,
+  "decode": "full-file decode passed",
+  "actual_encoded_motion_verified": true,
+  "reviewed_mp4_frames": 12,
+  "typewriter_complete": true,
+  "zoom_final": 1.3,
+  "website_changed_this_revision": false,
+  "bytes": 6957658
+}

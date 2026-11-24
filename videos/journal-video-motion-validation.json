@@ -1,0 +1,80 @@
+[
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "result": {
+      "src": "http://127.0.0.1:8090/assets/videos/journey-notes-v3.mp4",
+      "width": 1280,
+      "height": 720,
+      "muted": true,
+      "loop": true,
+      "autoplay": true,
+      "paused": false,
+      "time": 1.173364,
+      "renderWidth": 805,
+      "renderHeight": 452.8125,
+      "error": null
+    },
+    "motion_samples": [
+      {
+        "sha256": "be989ae4df6e11db05ee02a0eef3b4c54bfff9564083e6a8b0bce6c19d569ac7",
+        "time": 4.230091,
+        "decoded": 105,
+        "paused": false
+      },
+      {
+        "sha256": "ce8e591f0ead22e5399331b95a3ec885978e36b554ca14e731b03e2b9d8481b0",
+        "time": 6.253242,
+        "decoded": 154,
+        "paused": false
+      },
+      {
+        "sha256": "2d5e9e6755b3d02d777bcdfd77a4fdc40bfa87e592734905f6bd1978f8d61f3d",
+        "time": 8.302107,
+        "decoded": 203,
+        "paused": false
+      }
+    ]
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "result": {
+      "src": "http://127.0.0.1:8090/assets/videos/journey-notes-v3.mp4",
+      "width": 1280,
+      "height": 720,
+      "muted": true,
+      "loop": true,
+      "autoplay": true,
+      "paused": false,
+      "time": 1.024191,
+      "renderWidth": 362,
+      "renderHeight": 203.625,
+      "error": null
+    },
+    "motion_samples": [
+      {
+        "sha256": "064246c9dccae6972f3e19a41ea36bcda64768eda450b2aa396085a5d0b409a7",
+        "time": 3.030567,
+        "decoded": 77,
+        "paused": false
+      },
+      {
+        "sha256": "088e3f85a08828ed63cd8d0b722fc1c05b9516a036410e6534ed611ab9b5489c",
+        "time": 4.930097,
+        "decoded": 123,
+        "paused": false
+      },
+      {
+        "sha256": "c68434782c063e33a73400c91632e182c14f94308a4fc46fe7ccbf0d0336cecd",
+        "time": 6.823288,
+        "decoded": 168,
+        "paused": false
+      }
+    ]
+  }
+]

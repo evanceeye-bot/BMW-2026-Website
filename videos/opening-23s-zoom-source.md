@@ -1,3 +1,5 @@
+> 注意：v2 的手札畫面在錄影擷取中停在首幀，請改下載 bmw-opening-23s-journal-zoom-v3.mp4。
+
 # 23秒開場引導 v2：新手札影片與登機證放大
 
 下載：bmw-opening-23s-journal-zoom-v2.mp4，GitHub檔案頁右上角 Download raw file。
