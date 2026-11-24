@@ -1,0 +1,27 @@
+{
+  "duration_seconds": 45,
+  "fps": 30,
+  "frames": 1350,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "audio_streams": 0,
+  "decode": "full-file decode passed",
+  "reviewed_frame_times": [
+    0.7,
+    2.4,
+    4.3,
+    8,
+    16,
+    24,
+    32,
+    38.8,
+    43.5
+  ],
+  "opening_pixel_change": 11.98270318930041,
+  "photos": 12,
+  "source_photos_sha256_verified": true,
+  "website_modified": false,
+  "file_bytes": 62023986
+}

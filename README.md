@@ -31,3 +31,5 @@
 `npx hyperframes@0.8.214 preview --background`
 
 檢查：lint/runtime/layout零錯誤、對比47/47通過。已檢視開箱、四站、全貌、收尾影格。保留使用者指定無聲、短暫開場文案閱讀時間及全貌縮小字體等craft提示；全貌用於看見旅程，不預期閱讀每個小字。
+
+成品驗證：45.000秒、1350影格、無音訊軌，完整FFmpeg解碼通過。另從成品MP4抽查9個時間點（開箱、四站、全貌、結尾）；見 rendered-contact-sheet.jpg 與 validation.json。
