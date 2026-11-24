@@ -1,0 +1,127 @@
+{
+  "website_commit": "514426857bac3830521bda206d0f20db9878e166",
+  "catalog": "assets/memories.json",
+  "photos": [
+    {
+      "group": "food",
+      "src": "assets/images/memories/food-08.webp",
+      "thumbnail": "assets/images/memories/food-08-thumb.webp",
+      "caption": "二部 · 感恩餐車餐會",
+      "alt": "二部 · 感恩餐車餐會活動照片",
+      "audit_index": 0,
+      "project_asset": "assets/food-08.webp",
+      "sha256": "3821c3c222576ad9482b6ef159cf7d43bc2ee89991bad799bfc34e39fd23438f"
+    },
+    {
+      "group": "food",
+      "src": "assets/images/memories/food-11.webp",
+      "thumbnail": "assets/images/memories/food-11-thumb.webp",
+      "caption": "五部 · 團隊相聚",
+      "alt": "五部 · 團隊相聚活動照片",
+      "audit_index": 7,
+      "project_asset": "assets/food-11.webp",
+      "sha256": "1927954337e3758430b9c4f38a920b57636c8b34dd33dd51c2965898cf8a1f9c"
+    },
+    {
+      "group": "food",
+      "src": "assets/images/memories/food-batch2-13.webp",
+      "thumbnail": "assets/images/memories/food-batch2-13-thumb.webp",
+      "caption": "過年包福 · 一起包水餃",
+      "alt": "過年包福 · 一起包水餃照片",
+      "audit_index": 11,
+      "project_asset": "assets/food-batch2-13.webp",
+      "sha256": "71ac905308367909ff40418c3d940e96062a3ae9c47ff2297629eb803662e3d9"
+    },
+    {
+      "group": "celebrate",
+      "src": "assets/images/memories/celebrate-05.webp",
+      "thumbnail": "assets/images/memories/celebrate-05-thumb.webp",
+      "caption": "九部 · 中秋活動",
+      "alt": "九部 · 中秋活動活動照片",
+      "audit_index": 15,
+      "project_asset": "assets/celebrate-05.webp",
+      "sha256": "098abcafc510127c4721c5d0f7027860074302e0dc0414ad23eb4f9af5ab0f1b"
+    },
+    {
+      "group": "celebrate",
+      "src": "assets/images/memories/celebrate-batch2-17.webp",
+      "thumbnail": "assets/images/memories/celebrate-batch2-17-thumb.webp",
+      "caption": "聖誕活動花絮",
+      "alt": "聖誕活動花絮照片",
+      "audit_index": 20,
+      "project_asset": "assets/celebrate-batch2-17.webp",
+      "sha256": "ff37beb1a6827c1a462e97416ee70af2c7e758d67ef135140345b582e69ba5a5"
+    },
+    {
+      "group": "celebrate",
+      "src": "assets/images/memories/celebrate-batch2-01.webp",
+      "thumbnail": "assets/images/memories/celebrate-batch2-01-thumb.webp",
+      "caption": "三部 · 活動合照",
+      "alt": "三部 · 活動合照照片",
+      "audit_index": 23,
+      "project_asset": "assets/celebrate-batch2-01.webp",
+      "sha256": "afd60f0498bd4f2e08b85c047551d3c086d5335e670ebc12fa741f963a4058f8"
+    },
+    {
+      "group": "together",
+      "src": "assets/images/memories/together-13.webp",
+      "thumbnail": "assets/images/memories/together-13-thumb.webp",
+      "caption": "五部 · 團隊合照",
+      "alt": "五部 · 團隊合照活動照片",
+      "audit_index": 29,
+      "project_asset": "assets/together-13.webp",
+      "sha256": "440a029986cebb6d2bf9f8670da39ab7908e53352b43a946999fe7b60d3e8907"
+    },
+    {
+      "group": "together",
+      "src": "assets/images/memories/together-14.webp",
+      "thumbnail": "assets/images/memories/together-14-thumb.webp",
+      "caption": "五部 · 團隊合照",
+      "alt": "五部 · 團隊合照活動照片",
+      "audit_index": 32,
+      "project_asset": "assets/together-14.webp",
+      "sha256": "86a2685801d2e8b63d8866e7c878bfebaba9d4fe607d0a8e09b891714c69cf9d"
+    },
+    {
+      "group": "together",
+      "src": "assets/images/memories/together-batch2-16.webp",
+      "thumbnail": "assets/images/memories/together-batch2-16-thumb.webp",
+      "caption": "團隊活動合照",
+      "alt": "團隊活動合照照片",
+      "audit_index": 35,
+      "project_asset": "assets/together-batch2-16.webp",
+      "sha256": "245685c642f53de54648ae86e50811b686a5e00c4c094b14bc3821c380755302"
+    },
+    {
+      "group": "dialogue",
+      "src": "assets/images/memories/dialogue-new-05.webp",
+      "thumbnail": "assets/images/memories/dialogue-new-05-thumb.webp",
+      "caption": "6月10日 · 台中華信",
+      "alt": "6月10日 · 台中華信員工座談會合照",
+      "audit_index": 36,
+      "project_asset": "assets/dialogue-new-05.webp",
+      "sha256": "37dfbf1434b3d6e1fcc6d94114c034ffbbc103154d40a21f6ac4ff11112f3bc4"
+    },
+    {
+      "group": "dialogue",
+      "src": "assets/images/memories/dialogue-new-03.webp",
+      "thumbnail": "assets/images/memories/dialogue-new-03-thumb.webp",
+      "caption": "8月6日 · 高雄",
+      "alt": "8月6日 · 高雄員工座談會合照",
+      "audit_index": 41,
+      "project_asset": "assets/dialogue-new-03.webp",
+      "sha256": "7f630b9dd2f617da26f88a571fcd505e19116605e0b2b84e8426382af29e14f1"
+    },
+    {
+      "group": "dialogue",
+      "src": "assets/images/memories/dialogue-update-20261104.webp",
+      "thumbnail": "assets/images/memories/dialogue-update-20261104-thumb.webp",
+      "caption": "10月2日 · 三重",
+      "alt": "10月2日 · 三重員工座談會合照",
+      "audit_index": 47,
+      "project_asset": "assets/dialogue-update-20261104.webp",
+      "sha256": "655a09e5afd3c448f2d15db1e934862cca8f906decef5a04ec61bff16f5a711c"
+    }
+  ],
+  "note": "Captions copied verbatim. Travel route is conceptual, not geography."
+}
