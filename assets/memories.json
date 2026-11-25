@@ -240,7 +240,44 @@
     "id": "esg",
     "title": "ESG 活動",
     "description": "讓每一次行動，都留下更好的風景。",
-    "photos": []
+    "photos": [
+      {
+        "src": "assets/images/memories/esg-01.webp",
+        "thumbnail": "assets/images/memories/esg-01-thumb.webp",
+        "caption": "台中弘道老人基金會",
+        "alt": "台中弘道老人基金會 · 志工與參與者合影"
+      },
+      {
+        "src": "assets/images/memories/esg-02.webp",
+        "thumbnail": "assets/images/memories/esg-02-thumb.webp",
+        "caption": "高雄市新興",
+        "alt": "高雄市新興 · 志工在活動場地協助民眾"
+      },
+      {
+        "src": "assets/images/memories/esg-03.webp",
+        "thumbnail": "assets/images/memories/esg-03-thumb.webp",
+        "caption": "高雄市新興",
+        "alt": "高雄市新興 · 志工在桌旁協助民眾"
+      },
+      {
+        "src": "assets/images/memories/esg-04.webp",
+        "thumbnail": "assets/images/memories/esg-04-thumb.webp",
+        "caption": "台中大里",
+        "alt": "台中大里 · 志工向長者說明活動內容"
+      },
+      {
+        "src": "assets/images/memories/esg-05.webp",
+        "thumbnail": "assets/images/memories/esg-05-thumb.webp",
+        "caption": "台中大里",
+        "alt": "台中大里 · 志工在桌旁協助長者"
+      },
+      {
+        "src": "assets/images/memories/esg-06.webp",
+        "thumbnail": "assets/images/memories/esg-06-thumb.webp",
+        "caption": "台中弘道老人基金會",
+        "alt": "台中弘道老人基金會 · 志工在教室協助長者操作"
+      }
+    ]
   },
   {
     "id": "learning",
