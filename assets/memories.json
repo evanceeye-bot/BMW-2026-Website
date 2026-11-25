@@ -242,6 +242,48 @@
     "description": "讓每一次行動，都留下更好的風景。",
     "photos": [
       {
+        "src": "assets/images/memories/esg-08.webp",
+        "thumbnail": "assets/images/memories/esg-08-thumb.webp",
+        "caption": "台中淨灘活動",
+        "alt": "台中淨灘活動 · 用愛環抱海洋淨灘活動團體照"
+      },
+      {
+        "src": "assets/images/memories/esg-07.webp",
+        "thumbnail": "assets/images/memories/esg-07-thumb.webp",
+        "caption": "台中淨灘活動",
+        "alt": "台中淨灘活動 · 志工戴手套清理岸邊雜物"
+      },
+      {
+        "src": "assets/images/memories/esg-09.webp",
+        "thumbnail": "assets/images/memories/esg-09-thumb.webp",
+        "caption": "宜蘭五結",
+        "alt": "宜蘭五結 · 講師在智慧樂齡新視界投影片前授課"
+      },
+      {
+        "src": "assets/images/memories/esg-10.webp",
+        "thumbnail": "assets/images/memories/esg-10-thumb.webp",
+        "caption": "宜蘭五結",
+        "alt": "宜蘭五結 · 數位賦能・築夢在地公益活動團體照"
+      },
+      {
+        "src": "assets/images/memories/esg-11.webp",
+        "thumbnail": "assets/images/memories/esg-11-thumb.webp",
+        "caption": "新北蘆洲",
+        "alt": "新北蘆洲 · 講師拿著平板向孩子示範"
+      },
+      {
+        "src": "assets/images/memories/esg-12.webp",
+        "thumbnail": "assets/images/memories/esg-12-thumb.webp",
+        "caption": "新北蘆洲",
+        "alt": "新北蘆洲 · 孩子們在教室舉手搶答"
+      },
+      {
+        "src": "assets/images/memories/esg-13.webp",
+        "thumbnail": "assets/images/memories/esg-13-thumb.webp",
+        "caption": "新北蘆洲",
+        "alt": "新北蘆洲 · 孩子走到螢幕前，講師拍手鼓勵"
+      },
+      {
         "src": "assets/images/memories/esg-01.webp",
         "thumbnail": "assets/images/memories/esg-01-thumb.webp",
         "caption": "台中弘道老人基金會",
