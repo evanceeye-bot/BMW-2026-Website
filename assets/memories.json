@@ -3,19 +3,256 @@
     "id": "food",
     "title": "旅途剪影",
     "description": "一起翻看活動與日常的精彩片段。",
-    "photos": []
+    "photos": [
+      {
+        "src": "assets/images/memories/rebuild-food-01.webp",
+        "thumbnail": "assets/images/memories/rebuild-food-01-thumb.webp",
+        "caption": "客服四部",
+        "alt": "客服四部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-food-02.webp",
+        "thumbnail": "assets/images/memories/rebuild-food-02-thumb.webp",
+        "caption": "客服七部",
+        "alt": "客服七部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-food-03.webp",
+        "thumbnail": "assets/images/memories/rebuild-food-03-thumb.webp",
+        "caption": "客服九部",
+        "alt": "客服九部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-food-04.webp",
+        "thumbnail": "assets/images/memories/rebuild-food-04-thumb.webp",
+        "caption": "客服六部",
+        "alt": "客服六部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-food-05.webp",
+        "thumbnail": "assets/images/memories/rebuild-food-05-thumb.webp",
+        "caption": "新事業",
+        "alt": "新事業活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-food-06.webp",
+        "thumbnail": "assets/images/memories/rebuild-food-06-thumb.webp",
+        "caption": "客服十部",
+        "alt": "客服十部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-food-07.webp",
+        "thumbnail": "assets/images/memories/rebuild-food-07-thumb.webp",
+        "caption": "客服三部",
+        "alt": "客服三部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-food-08.webp",
+        "thumbnail": "assets/images/memories/rebuild-food-08-thumb.webp",
+        "caption": "客服五部",
+        "alt": "客服五部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-food-09.webp",
+        "thumbnail": "assets/images/memories/rebuild-food-09-thumb.webp",
+        "caption": "慶生",
+        "alt": "慶生活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-food-10.webp",
+        "thumbnail": "assets/images/memories/rebuild-food-10-thumb.webp",
+        "caption": "客服一部",
+        "alt": "客服一部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-food-11.webp",
+        "thumbnail": "assets/images/memories/rebuild-food-11-thumb.webp",
+        "caption": "客服十部",
+        "alt": "客服十部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-food-12.webp",
+        "thumbnail": "assets/images/memories/rebuild-food-12-thumb.webp",
+        "caption": "客服十一部",
+        "alt": "客服十一部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-food-13.webp",
+        "thumbnail": "assets/images/memories/rebuild-food-13-thumb.webp",
+        "caption": "客服八部",
+        "alt": "客服八部活動照片"
+      }
+    ]
   },
   {
     "id": "celebrate",
     "title": "同行片刻",
     "description": "一起翻看活動與日常的精彩片段。",
-    "photos": []
+    "photos": [
+      {
+        "src": "assets/images/memories/rebuild-celebrate-01.webp",
+        "thumbnail": "assets/images/memories/rebuild-celebrate-01-thumb.webp",
+        "caption": "客服六部",
+        "alt": "客服六部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-celebrate-02.webp",
+        "thumbnail": "assets/images/memories/rebuild-celebrate-02-thumb.webp",
+        "caption": "客服三部",
+        "alt": "客服三部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-celebrate-03.webp",
+        "thumbnail": "assets/images/memories/rebuild-celebrate-03-thumb.webp",
+        "caption": "客服五部",
+        "alt": "客服五部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-celebrate-04.webp",
+        "thumbnail": "assets/images/memories/rebuild-celebrate-04-thumb.webp",
+        "caption": "客服八部",
+        "alt": "客服八部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-celebrate-05.webp",
+        "thumbnail": "assets/images/memories/rebuild-celebrate-05-thumb.webp",
+        "caption": "新事業",
+        "alt": "新事業活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-celebrate-06.webp",
+        "thumbnail": "assets/images/memories/rebuild-celebrate-06-thumb.webp",
+        "caption": "客服六部",
+        "alt": "客服六部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-celebrate-07.webp",
+        "thumbnail": "assets/images/memories/rebuild-celebrate-07-thumb.webp",
+        "caption": "慶生",
+        "alt": "慶生活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-celebrate-08.webp",
+        "thumbnail": "assets/images/memories/rebuild-celebrate-08-thumb.webp",
+        "caption": "客服七部",
+        "alt": "客服七部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-celebrate-09.webp",
+        "thumbnail": "assets/images/memories/rebuild-celebrate-09-thumb.webp",
+        "caption": "客服十一部",
+        "alt": "客服十一部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-celebrate-10.webp",
+        "thumbnail": "assets/images/memories/rebuild-celebrate-10-thumb.webp",
+        "caption": "客服一部",
+        "alt": "客服一部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-celebrate-11.webp",
+        "thumbnail": "assets/images/memories/rebuild-celebrate-11-thumb.webp",
+        "caption": "客服九部",
+        "alt": "客服九部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-celebrate-12.webp",
+        "thumbnail": "assets/images/memories/rebuild-celebrate-12-thumb.webp",
+        "caption": "客服十部",
+        "alt": "客服十部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-celebrate-13.webp",
+        "thumbnail": "assets/images/memories/rebuild-celebrate-13-thumb.webp",
+        "caption": "客服四部",
+        "alt": "客服四部活動照片"
+      }
+    ]
   },
   {
     "id": "together",
     "title": "相聚時光",
     "description": "一起翻看活動與日常的精彩片段。",
-    "photos": []
+    "photos": [
+      {
+        "src": "assets/images/memories/rebuild-together-01.webp",
+        "thumbnail": "assets/images/memories/rebuild-together-01-thumb.webp",
+        "caption": "新事業",
+        "alt": "新事業活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-together-02.webp",
+        "thumbnail": "assets/images/memories/rebuild-together-02-thumb.webp",
+        "caption": "客服二部",
+        "alt": "客服二部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-together-03.webp",
+        "thumbnail": "assets/images/memories/rebuild-together-03-thumb.webp",
+        "caption": "新事業",
+        "alt": "新事業活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-together-04.webp",
+        "thumbnail": "assets/images/memories/rebuild-together-04-thumb.webp",
+        "caption": "客服五部",
+        "alt": "客服五部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-together-05.webp",
+        "thumbnail": "assets/images/memories/rebuild-together-05-thumb.webp",
+        "caption": "客服八部",
+        "alt": "客服八部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-together-06.webp",
+        "thumbnail": "assets/images/memories/rebuild-together-06-thumb.webp",
+        "caption": "客服七部",
+        "alt": "客服七部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-together-07.webp",
+        "thumbnail": "assets/images/memories/rebuild-together-07-thumb.webp",
+        "caption": "客服十部",
+        "alt": "客服十部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-together-08.webp",
+        "thumbnail": "assets/images/memories/rebuild-together-08-thumb.webp",
+        "caption": "客服四部",
+        "alt": "客服四部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-together-09.webp",
+        "thumbnail": "assets/images/memories/rebuild-together-09-thumb.webp",
+        "caption": "客服十一部",
+        "alt": "客服十一部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-together-10.webp",
+        "thumbnail": "assets/images/memories/rebuild-together-10-thumb.webp",
+        "caption": "客服六部",
+        "alt": "客服六部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-together-11.webp",
+        "thumbnail": "assets/images/memories/rebuild-together-11-thumb.webp",
+        "caption": "客服三部",
+        "alt": "客服三部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-together-12.webp",
+        "thumbnail": "assets/images/memories/rebuild-together-12-thumb.webp",
+        "caption": "客服九部",
+        "alt": "客服九部活動照片"
+      },
+      {
+        "src": "assets/images/memories/rebuild-together-13.webp",
+        "thumbnail": "assets/images/memories/rebuild-together-13-thumb.webp",
+        "caption": "慶生",
+        "alt": "慶生活動照片"
+      }
+    ]
   },
   {
     "id": "esg",
