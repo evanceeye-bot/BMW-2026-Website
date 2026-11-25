@@ -1,7 +1,7 @@
 [
   {
     "id": "food",
-    "title": "回憶相簿 1",
+    "title": "旅途剪影",
     "description": "一起翻看活動與日常的精彩片段。",
     "photos": [
       {
@@ -80,7 +80,7 @@
   },
   {
     "id": "celebrate",
-    "title": "回憶相簿 2",
+    "title": "同行片刻",
     "description": "一起翻看活動與日常的精彩片段。",
     "photos": [
       {
@@ -159,7 +159,7 @@
   },
   {
     "id": "together",
-    "title": "回憶相簿 3",
+    "title": "相聚時光",
     "description": "一起翻看活動與日常的精彩片段。",
     "photos": [
       {
