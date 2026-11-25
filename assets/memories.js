@@ -121,7 +121,7 @@
   rail.addEventListener('click', event => { if (suppressClick) {event.preventDefault();event.stopImmediatePropagation();} }, true);
   updateArrows();
 
-  const ready = fetch('assets/memories.json?v=17').then(response => { if (!response.ok) throw new Error('Album data unavailable'); return response.json(); }).then(data => {
+  const ready = fetch('assets/memories.json?v=18').then(response => { if (!response.ok) throw new Error('Album data unavailable'); return response.json(); }).then(data => {
     albums = data;
     entries.forEach(button => {
       const album = albums.find(item => item.id === button.dataset.album);
