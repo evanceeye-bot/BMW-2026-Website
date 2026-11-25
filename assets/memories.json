@@ -568,5 +568,60 @@
         "alt": "10月2日 · 三重員工座談會合照"
       }
     ]
+  },
+  {
+    "id": "csea",
+    "title": "卓越客戶服務大獎",
+    "description": "2026 年卓越客戶服務大獎頒獎典禮紀錄。",
+    "photos": [
+      {
+        "src": "assets/images/memories/csea-05.webp",
+        "thumbnail": "assets/images/memories/csea-05-thumb.webp",
+        "caption": "頒獎典禮團體合照",
+        "alt": "卓越客戶服務大獎 · 頒獎典禮團體合照"
+      },
+      {
+        "src": "assets/images/memories/csea-01.webp",
+        "thumbnail": "assets/images/memories/csea-01-thumb.webp",
+        "caption": "最佳客戶服務企業",
+        "alt": "卓越客戶服務大獎 · 最佳客戶服務企業"
+      },
+      {
+        "src": "assets/images/memories/csea-02.webp",
+        "thumbnail": "assets/images/memories/csea-02-thumb.webp",
+        "caption": "GCCA 卓越服務品牌獎",
+        "alt": "卓越客戶服務大獎 · GCCA 卓越服務品牌獎"
+      },
+      {
+        "src": "assets/images/memories/csea-03.webp",
+        "thumbnail": "assets/images/memories/csea-03-thumb.webp",
+        "caption": "行動專線效能管理團隊",
+        "alt": "卓越客戶服務大獎 · 行動專線效能管理團隊"
+      },
+      {
+        "src": "assets/images/memories/csea-04.webp",
+        "thumbnail": "assets/images/memories/csea-04-thumb.webp",
+        "caption": "最佳 AI 智慧應用團隊",
+        "alt": "卓越客戶服務大獎 · 最佳 AI 智慧應用團隊"
+      },
+      {
+        "src": "assets/images/memories/csea-06.webp",
+        "thumbnail": "assets/images/memories/csea-06-thumb.webp",
+        "caption": "頒獎典禮現場互動",
+        "alt": "卓越客戶服務大獎 · 頒獎典禮現場互動"
+      },
+      {
+        "src": "assets/images/memories/csea-07.webp",
+        "thumbnail": "assets/images/memories/csea-07-thumb.webp",
+        "caption": "頒獎典禮合影",
+        "alt": "卓越客戶服務大獎 · 頒獎典禮合影"
+      },
+      {
+        "src": "assets/images/memories/csea-08.webp",
+        "thumbnail": "assets/images/memories/csea-08-thumb.webp",
+        "caption": "頒獎典禮現場加油",
+        "alt": "卓越客戶服務大獎 · 頒獎典禮現場加油"
+      }
+    ]
   }
 ]
