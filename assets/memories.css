@@ -127,3 +127,26 @@
 .memoryAlbum[data-theme="dialogue"] .albumStage{border:7px solid #fff;border-radius:5px;width:calc(100% - 14px);box-sizing:content-box}
 @media(max-width:640px){.memoryAlbum[data-theme="dialogue"]{padding:20px 14px}.memoryAlbum[data-theme="dialogue"] .albumThumbs{gap:21px 14px;padding:6px 5px 16px}.memoryAlbum[data-theme="dialogue"] .albumThumbs button{padding:6px 6px 15px}.memoryAlbum[data-theme="dialogue"] .albumThumbs:before{font-size:12px}.memoryAlbum[data-theme="dialogue"] .albumHead>div{padding-right:20px}}
 @media(prefers-reduced-motion:reduce){.memoryAlbum[data-theme="dialogue"] .albumThumbs button{transition:none}}
+
+/* Watercolor paper shared by the seven album interiors. */
+.memoryAlbum[data-theme] .albumStage {
+  overflow: hidden;
+  border: 1px solid #d7e6ee;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  background: #f2f8fb url(images/album-watercolor.webp) center / 100% 100% no-repeat;
+  box-shadow: 0 8px 22px #294e681a;
+}
+.memoryAlbum[data-theme] .albumStage::after {
+  content: none;
+}
+.memoryAlbum[data-theme] .albumBackdrop {
+  display: none;
+}
+.memoryAlbum[data-theme] .albumMainImage {
+  width: 78%;
+  height: 74%;
+  margin-bottom: 5%;
+  filter: drop-shadow(0 4px 8px #203c5333);
+}
