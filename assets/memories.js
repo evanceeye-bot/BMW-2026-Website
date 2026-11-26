@@ -4,22 +4,33 @@
   const entries = [...document.querySelectorAll('[data-album]')];
   if (!dialog || !entries.length) return;
   const select = (name) => dialog.querySelector(name);
-  const image = select('.albumMainImage'), stage = select('.albumStage');
+  const spread = select('.albumSpread'), stage = select('.albumStage');
   const previous = select('.albumPrev'), next = select('.albumNext');
   const play = select('.albumPlay'), thumbs = select('.albumThumbs');
   let albums = [], current = null, index = 0, timer = null, returnFocus = null, oldOverflow = '';
   function stop() { clearInterval(timer); timer = null; play.textContent = '播放相簿'; play.setAttribute('aria-pressed', 'false'); }
   function show(position) {
     const photos = current.photos;
-    index = (position + photos.length) % photos.length;
-    const photo = photos[index];
-    image.src = photo.src;
-    image.alt = photo.alt || photo.caption || `${current.title}花絮，第 ${index + 1} 張`;
-    select('.albumBackdrop').style.backgroundImage = `url(${JSON.stringify(photo.src)})`;
-    select('.albumCaption').textContent = photo.caption || '';
-    select('.albumCounter').textContent = `${index + 1} / ${photos.length}`;
-    [...thumbs.children].forEach((button, i) => button.setAttribute('aria-current', String(i === index)));
-    const active = thumbs.children[index];
+    const pageCount = Math.ceil(photos.length / 2);
+    index = (position + pageCount) % pageCount;
+    const first = index * 2;
+    const pair = photos.slice(first, first + 2);
+    spread.replaceChildren(...pair.map((photo, offset) => {
+      const frame = document.createElement('figure');
+      frame.className = 'albumFrame';
+      const image = document.createElement('img');
+      image.className = 'albumMainImage';
+      image.src = photo.src;
+      image.alt = photo.alt || photo.caption || `${current.title}花絮，第 ${first + offset + 1} 張`;
+      const caption = document.createElement('figcaption');
+      caption.textContent = photo.caption || '';
+      frame.append(image, caption);
+      return frame;
+    }));
+    const range = pair.length === 2 ? `${first + 1}–${first + 2}` : first + 1;
+    select('.albumCounter').textContent = `${range} / ${photos.length}`;
+    [...thumbs.children].forEach((button, i) => button.setAttribute('aria-current', String(i >= first && i < first + pair.length)));
+    const active = thumbs.children[first];
 
     if (active) thumbs.scrollLeft = active.offsetLeft - thumbs.offsetLeft - thumbs.clientWidth / 2 + active.clientWidth / 2;
   }
@@ -32,14 +43,11 @@
     select('#memoryAlbumDescription').textContent = album.description;
     thumbs.replaceChildren();
     const count = album.photos.length;
-    image.hidden = !count; select('.albumEmpty').hidden = !!count;
+    spread.hidden = !count; select('.albumEmpty').hidden = !!count;
     previous.hidden = next.hidden = count < 2;
     play.disabled = count < 2; play.hidden = !count;
-    select('.albumControls > span').hidden = !count;
     select('.albumCounter').textContent = count ? '' : '照片待補';
-    select('.albumCaption').textContent = '';
-    select('.albumBackdrop').style.backgroundImage = '';
-    image.removeAttribute('src');
+    spread.replaceChildren();
     album.photos.forEach((photo, i) => {
       const thumb = document.createElement('button'); thumb.type = 'button';
       thumb.setAttribute('aria-label', `查看第 ${i + 1} 張照片`);
@@ -52,7 +60,7 @@
         thumb.append(title);
         thumb.setAttribute('aria-label', `查看第 ${i + 1} 張照片：${photo.caption}`);
       }
-      thumb.addEventListener('click', () => { stop(); show(i); if (album.id === 'dialogue') { dialog.classList.add('isViewingPhoto'); dialog.scrollTo({top:0,behavior:'instant'}); } }); thumbs.append(thumb);
+      thumb.addEventListener('click', () => { stop(); show(Math.floor(i / 2)); if (album.id === 'dialogue') { dialog.classList.add('isViewingPhoto'); dialog.scrollTo({top:0,behavior:'instant'}); } }); thumbs.append(thumb);
     });
     oldOverflow = document.body.style.overflow; document.body.style.overflow = 'hidden';
     dialog.showModal(); dialog.scrollTop = 0;
@@ -65,10 +73,10 @@
   play.addEventListener('click', () => {
     if (timer) return stop();
     play.textContent = '暫停播放'; play.setAttribute('aria-pressed', 'true');
-    timer = setInterval(() => { if (index === current.photos.length - 1) stop(); else show(index + 1); }, 4500);
+    timer = setInterval(() => { if (index === Math.ceil(current.photos.length / 2) - 1) stop(); else show(index + 1); }, 4500);
   });
   select('.albumClose').addEventListener('click', () => dialog.close());
-  dialog.addEventListener('close', () => { stop(); document.body.style.overflow = oldOverflow; image.removeAttribute('src'); returnFocus?.focus({preventScroll:true}); });
+  dialog.addEventListener('close', () => { stop(); document.body.style.overflow = oldOverflow; spread.replaceChildren(); returnFocus?.focus({preventScroll:true}); });
   dialog.addEventListener('click', (event) => { if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } });
   dialog.addEventListener('keydown', (event) => {
     if (!current?.photos.length || !['ArrowLeft','ArrowRight'].includes(event.key)) return;
