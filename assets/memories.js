@@ -20,6 +20,9 @@
       frame.className = 'albumFrame';
       const image = document.createElement('img');
       image.className = 'albumMainImage';
+      image.addEventListener('load', () => {
+        frame.style.setProperty('--photo-ratio', image.naturalWidth / image.naturalHeight);
+      }, {once: true});
       image.src = photo.src;
       image.alt = photo.alt || photo.caption || `${current.title}花絮，第 ${first + offset + 1} 張`;
       const caption = document.createElement('figcaption');
